@@ -14,7 +14,7 @@ Here is the source file, since the post is about measuring code coverage, it is 
 {% highlight CSharp %}
 using System;
 
-namespace DotNetThoughts.Net
+namespace anuraj.dev/blog
 {
     public class Math
     {
@@ -42,7 +42,7 @@ Once library created, you can execute dotnet build command to verify everything 
 {% highlight CSharp %}
 using Xunit;
 
-namespace DotNetThoughts.Net.Tests
+namespace anuraj.dev/blog.Tests
 {
     public class MathTest
     {

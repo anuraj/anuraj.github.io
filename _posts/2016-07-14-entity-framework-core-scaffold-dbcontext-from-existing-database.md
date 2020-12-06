@@ -40,7 +40,7 @@ Now you need to run the "dotnet restore" command to restore the packages. Once t
 
 ![dotnet ef command]({{ site.url }}{{ site.baseurl }}/assets/images/2016/07/dotnet_ef_command_result.png)
 
-You can run all the EF commands similar to previous versions commands. You can find more details about EF migration commands in this [post](https://dotnetthoughts.net/entity-framework-7-code-first-migrations/).
+You can run all the EF commands similar to previous versions commands. You can find more details about EF migration commands in this [post](https://anuraj.dev/blog/entity-framework-7-code-first-migrations/).
 
 To reverse engineer model classes and db context you need to execute the following command, which will generate the classes in the specified output directory.
 

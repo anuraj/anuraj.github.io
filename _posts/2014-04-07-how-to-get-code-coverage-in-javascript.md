@@ -9,7 +9,7 @@ categories: [Code coverage, CodeProject, HTML5, Javascript]
 tags: [blanketjs, Code Coverage, Javascript, JQuery, TDD, Unit Testing]
 header-img: "img/post-bg-01.jpg"
 ---
-Long back I did some posts on getting code coverage in C#. And one of my previous posts was about implementing [TDD in JavaScript](http://www.dotnetthoughts.net/?p=4044). This post is about getting JavaScript code coverage. In computer science, code coverage is a measure used to describe the degree to which the source code of a program is tested by a particular test suite. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. - Wikipedia.
+Long back I did some posts on getting code coverage in C#. And one of my previous posts was about implementing [TDD in JavaScript](http://www.anuraj.dev/blog/?p=4044). This post is about getting JavaScript code coverage. In computer science, code coverage is a measure used to describe the degree to which the source code of a program is tested by a particular test suite. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. - Wikipedia.
 
 For getting code coverage I am using a JavaScript library, [blanket.js](http://blanketjs.org). You can download it from the website. It very easy to enable code coverage using blanket.js. First you need to include the blanket.js file in your test runner html page. Then add the data- (data-cover) attribute to the script file, for you want to measure the code coverage.
 

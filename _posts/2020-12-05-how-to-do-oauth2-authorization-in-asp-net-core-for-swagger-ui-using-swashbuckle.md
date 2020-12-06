@@ -8,7 +8,7 @@ tags: [OpenAPI,AspNetCore,OAuth2]
 author: "Anuraj"
 image: /assets/images/2020/12/authentication_completed.png
 ---
-This post is about documenting OAuth 2 protected ASP.NET Core Web API using Swashbuckle. Last post - [Securing Your Web API Using Azure Active Directory](https://dotnetthoughts.net/securing-your-web-api-using-azure-active-directory/) I wrote about securing web api with Azure Active Directory. In ASP.NET Core Web API, Open API will be enabled by default. To enable OAuth2 authentication, first we need to write the following code. I this code we are adding a SecurityDefinition with OAuth2 type. And also configuring Authentication URL, Token URL and Scopes.
+This post is about documenting OAuth 2 protected ASP.NET Core Web API using Swashbuckle. Last post - [Securing Your Web API Using Azure Active Directory](https://anuraj.dev/blog/securing-your-web-api-using-azure-active-directory/) I wrote about securing web api with Azure Active Directory. In ASP.NET Core Web API, Open API will be enabled by default. To enable OAuth2 authentication, first we need to write the following code. I this code we are adding a SecurityDefinition with OAuth2 type. And also configuring Authentication URL, Token URL and Scopes.
 
 {% highlight CSharp %}
 c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme

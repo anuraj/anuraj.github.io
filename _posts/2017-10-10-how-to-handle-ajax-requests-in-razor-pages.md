@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about handling Ajax requests in ASP.NET Core Razor Pages. Razor Pages is a new feature of ASP.NET Core MVC that makes coding page-focused scenarios easier and more productive.
 
-I already posted a [blog post](https://dotnetthoughts.net/jquery-unobtrusive-ajax-helpers-in-aspnet-core/) about jQuery Unobtrusive Ajax Helpers in ASP.NET Core, which you can use it in Razor Pages as well. But most of those helpers are for POST / PUT requests, what if you want to load something in async way like cascading dropdown lists. So you might required to use jQuery ajax methods (`$.get` or `$.getJson`). OnGetCountries method returns list of countries.
+I already posted a [blog post](https://anuraj.dev/blog/jquery-unobtrusive-ajax-helpers-in-aspnet-core/) about jQuery Unobtrusive Ajax Helpers in ASP.NET Core, which you can use it in Razor Pages as well. But most of those helpers are for POST / PUT requests, what if you want to load something in async way like cascading dropdown lists. So you might required to use jQuery ajax methods (`$.get` or `$.getJson`). OnGetCountries method returns list of countries.
 
 {% highlight Javascript %}
 $.getJSON("/Index/OnGetCountries", function(data){

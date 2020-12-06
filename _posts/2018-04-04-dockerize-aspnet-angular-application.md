@@ -7,7 +7,7 @@ categories: [ASP.NET,Docker,Angular4]
 tags: [ASP.NET,Docker,Angular4]
 author: "Anuraj"
 ---
-Few days back I wrote a [post](https://dotnetthoughts.net/how-to-use-angular4-wth-aspnet-mvc/) about working with Angular 4 in ASP.NET MVC. I received multiple queries on deployment aspects - how to setup the development environment or how to deploy it in IIS, or in Azure etc. In this post I am explaining how to deploy a ASP.NET MVC - Angular application to Docker environment.
+Few days back I wrote a [post](https://anuraj.dev/blog/how-to-use-angular4-wth-aspnet-mvc/) about working with Angular 4 in ASP.NET MVC. I received multiple queries on deployment aspects - how to setup the development environment or how to deploy it in IIS, or in Azure etc. In this post I am explaining how to deploy a ASP.NET MVC - Angular application to Docker environment.
 
 In the first section, I deploying the published version of the application to Docker. I already posted the source code for this already available in [GitHub](https://github.com/anuraj/MVCAngularCRUDExample). 
 

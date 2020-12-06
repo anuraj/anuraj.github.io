@@ -7,7 +7,7 @@ categories: [Repository, Unit Of Work, Design Patterns, ASP.NET Core]
 tags: [Repository, Unit Of Work, Design Patterns, ASP.NET Core]
 author: "Anuraj"
 ---
-This post is about implementing the Repository and Unit of Work Patterns in ASP.NET Core. The repository and unit of work patterns are intended to create an abstraction layer between the data access layer and the business logic layer of an application. Implementing these patterns can help insulate your application from changes in the data store and can facilitate automated unit testing or test-driven development (TDD). Long back I wrote a [post](https://dotnetthoughts.net/Generic-repository-in-aspnet5/) on implementing a generic repository in ASP.NET 5 (Yes in ASP.NET 5 days, which can be used in ASP.NET Core as well.). So I am not explaining more on Repository pattern. The UnitOfWork pattern is a design for grouping a set of tasks into a single group of transactional work. The UnitOfWork pattern is the solution to sharing the Entity Framework data context across multiple managers and repositories.
+This post is about implementing the Repository and Unit of Work Patterns in ASP.NET Core. The repository and unit of work patterns are intended to create an abstraction layer between the data access layer and the business logic layer of an application. Implementing these patterns can help insulate your application from changes in the data store and can facilitate automated unit testing or test-driven development (TDD). Long back I wrote a [post](https://anuraj.dev/blog/Generic-repository-in-aspnet5/) on implementing a generic repository in ASP.NET 5 (Yes in ASP.NET 5 days, which can be used in ASP.NET Core as well.). So I am not explaining more on Repository pattern. The UnitOfWork pattern is a design for grouping a set of tasks into a single group of transactional work. The UnitOfWork pattern is the solution to sharing the Entity Framework data context across multiple managers and repositories.
 
 As mentioned, Unit Of Work pattern helps developers work with multiple repositories share single database context. This way, when a unit of work is complete, you can call the savechanges method of dbcontext, which will make sure all the changes associated with the context is saved to the database. I am using ASP.NET Core dependency injection feature to inject dependency to the controllers.
 
@@ -77,7 +77,7 @@ And you can use the unit of work like this.
 {% highlight CSharp %}
 _unitOfWork.BlogRepository.Create(new Blog()
 {
-    Url = "https://dotnetthoughts.net"
+    Url = "https://anuraj.dev/blog"
 });
 
 _unitOfWork.PostRepository.Create(new Post()

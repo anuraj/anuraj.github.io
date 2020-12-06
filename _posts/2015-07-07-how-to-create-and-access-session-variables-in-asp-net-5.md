@@ -44,7 +44,7 @@ public void Configure(IApplicationBuilder app)
 {% highlight CSharp %}
 //Setting the session values
 Context.Session.SetString("Name","Anuraj");
-Context.Session.SetString("Address", "www.dotnetthoughts.net");
+Context.Session.SetString("Address", "www.anuraj.dev/blog");
 //Getting the session values
 Name = Context.Session.GetString("Name"),
 Address = Context.Session.GetString("Address")

@@ -99,7 +99,7 @@ public class EmployeeController : Controller
 }
 {% endhighlight %}
 
-I am using ASP.NET dependency injection framework for injecting the repository class to the controller. You can find more details about ASP.NET dependency injection [here](http://www.dotnetthoughts.net/dependency-injection-in-asp-net-5/)
+I am using ASP.NET dependency injection framework for injecting the repository class to the controller. You can find more details about ASP.NET dependency injection [here](http://www.anuraj.dev/blog/dependency-injection-in-asp-net-5/)
 
 {% highlight CSharp %}
 public void Configure(IApplicationBuilder app)

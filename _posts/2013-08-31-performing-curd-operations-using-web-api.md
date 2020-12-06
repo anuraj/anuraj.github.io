@@ -101,7 +101,7 @@ X-Powered-By: ASP.NET
 Date: Sun, 01 Sep 2013 06:05:18 GMT
 Content-Length: 89
 
-[{"Id":1,"Name":"Employee1","Email":"employee1@dotnetthoughts.net","Phone":"0013456732"}]
+[{"Id":1,"Name":"Employee1","Email":"employee1@anuraj.dev/blog","Phone":"0013456732"}]
 {% endhighlight %}
 
 For Get a specific employee, use Get() method with an parameter int id. As it is GET request, you need to pass the Employee Id as the query string. 
@@ -124,7 +124,7 @@ curl -i -H "Accept: application/json" http://localhost:56103/api/employee/1
 And here is the response.(Removed the status line and other response text for readability)
 
 {% highlight bash %}
-{"Id":1,"Name":"Employee1","Email":"employee1@dotnetthoughts.net","Phone":"0013456732"}
+{"Id":1,"Name":"Employee1","Email":"employee1@anuraj.dev/blog","Phone":"0013456732"}
 {% endhighlight %}
 
 For creating an Employee, you need to send a POST request. And you need to pass the Employee model parameter.

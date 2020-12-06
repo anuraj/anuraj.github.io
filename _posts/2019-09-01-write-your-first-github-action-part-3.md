@@ -7,7 +7,7 @@ categories: [CI,GitHub Actions,ASPNET Core]
 tags: [CI,GitHub Actions,ASPNET Core]
 author: "Anuraj"
 ---
-In the [last post](https://dotnetthoughts.net/write-your-first-github-action-part-2/) we learned about deploying a NuGet package to nuget.org using `dotnet nuget push` command. In this post, we will learn how to deploy an ASP.NET Core Web API application to Azure App Service.
+In the [last post](https://anuraj.dev/blog/write-your-first-github-action-part-2/) we learned about deploying a NuGet package to nuget.org using `dotnet nuget push` command. In this post, we will learn how to deploy an ASP.NET Core Web API application to Azure App Service.
 
 For deploying web apps to Azure App services, Microsoft introduced an Action, we can get it from [App Service actions repository](https://github.com/Azure/appservice-actions). If we open the `Action.yml` file, you will be able to see, it requires 3 parameters - publish-profile - app service publish settings file, app-name and package to deploy. Since publish settings file contains sensitive information, we need to use the GitHub secrets feature. Adding publish settings file to GitHub secrets is straight forward. Open the publish settings file, copy the contents to the GitHub secrets value textbox.
 

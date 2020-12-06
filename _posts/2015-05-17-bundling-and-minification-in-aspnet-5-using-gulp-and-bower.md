@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net, ASP.Net MVC, CodeProject, HTML5, Javascript]
 tags: [.Net, ASP.NET 5, ASP.Net MVC, ASP.Net vNext, Bower, Gulp]
 header-img: "img/post-bg-01.jpg"
 ---
-This post is about Bundling and minification in ASP.NET 5. ASP.NET MVC 5 comes with bundling and minification support. Long back I wrote a <a href="http://www.dotnetthoughts.net/how-to-do-css-and-javascript-bundling-and-minification-in-asp-net/" target="_blank">blog post</a> on CSS and JavaScript Bundling and Minification in ASP.NET.
+This post is about Bundling and minification in ASP.NET 5. ASP.NET MVC 5 comes with bundling and minification support. Long back I wrote a <a href="http://www.anuraj.dev/blog/how-to-do-css-and-javascript-bundling-and-minification-in-asp-net/" target="_blank">blog post</a> on CSS and JavaScript Bundling and Minification in ASP.NET.
 
 This is post is using Gulp and Bower. Gulp is a streaming build system, by using nodeâ€™s streams file manipulation is all done in memory, and a file isnâ€™t written until you tell it to do so. Bower is a package management tool for javascript client side frameworks like nuget for .NET components. You require Nodejs to install both of these applications. You can install Gulp and Bower using following commands. 
 
@@ -61,7 +61,7 @@ Which will create a bower.json file like this.
     "globals"
   ],
   "license": "MIT",
-  "homepage": "www.dotnetthoughts.net",
+  "homepage": "www.anuraj.dev/blog",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -86,7 +86,7 @@ You can use Visual Studio code, to edit bower.json file, it supports auto comple
     "globals"
   ],
   "license": "MIT",
-  "homepage": "www.dotnetthoughts.net",
+  "homepage": "www.anuraj.dev/blog",
   "ignore": [
     "**/.*",
     "node_modules",

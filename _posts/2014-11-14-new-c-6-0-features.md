@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net, CodeProject, Miscellaneous, Visual Studio]
 tags: [.Net, C#, C# 6.0, C#.Net, Visual Studio, VS 2015]
 header-img: "img/post-bg-01.jpg"
 ---
-As part of the Connect(); event, Microsoft introduced VS2015 Preview, which includes C# 6.0 with few more features. (These features are not included in my earlier post [What is new in C# 6.0](http://www.dotnetthoughts.net/what-is-new-in-c-6-0/), as I already mentioned these features introduced by Microsoft in the Connect(); event few days back.)
+As part of the Connect(); event, Microsoft introduced VS2015 Preview, which includes C# 6.0 with few more features. (These features are not included in my earlier post [What is new in C# 6.0](http://www.anuraj.dev/blog/what-is-new-in-c-6-0/), as I already mentioned these features introduced by Microsoft in the Connect(); event few days back.)
 
 
 

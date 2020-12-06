@@ -10,7 +10,7 @@ tags: [C#, ASP.NET Core, Compression, Middleware]
 header-img: "img/post-bg-01.jpg"
 ---
 
-This post is about using Response Compression Middleware in ASP.NET Core. Long back I wrote blog post on [Enabling GZip Compression in ASP.NET5](https://dotnetthoughts.net/enabling-gzip-compression-in-ASP.NET5/). It was a custom middleware I implemented in DNX days. Now as part of ASP.NET Core 1.1 Preview 1, Microsoft introduced Response Compression Middleware in ASP.NET Core.
+This post is about using Response Compression Middleware in ASP.NET Core. Long back I wrote blog post on [Enabling GZip Compression in ASP.NET5](https://anuraj.dev/blog/enabling-gzip-compression-in-ASP.NET5/). It was a custom middleware I implemented in DNX days. Now as part of ASP.NET Core 1.1 Preview 1, Microsoft introduced Response Compression Middleware in ASP.NET Core.
 
 To use Response Compression Middleware, first you need to add the `Microsoft.AspNetCore.ResponseCompression` package to your project.json file.
 

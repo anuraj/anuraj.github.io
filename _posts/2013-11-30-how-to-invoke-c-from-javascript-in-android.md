@@ -9,7 +9,7 @@ categories: [.Net, HTML5, Javascript, Xamarin]
 tags: [.Net, C#, Hybrid application, Javascript, Xamarin]
 header-img: "img/post-bg-01.jpg"
 ---
-This post about to invoke C# from Javascript in Xamarin for Android. My [last post](http://www.dotnetthoughts.net/building-hybrid-application-for-android-using-c-and-xamarin-studio/) related to building hybrid applications with C# and Xamarin, I got few comments like in hybrid application development, host language interface with javascript is an important topic, so I thought of writing a blog post. 
+This post about to invoke C# from Javascript in Xamarin for Android. My [last post](http://www.anuraj.dev/blog/building-hybrid-application-for-android-using-c-and-xamarin-studio/) related to building hybrid applications with C# and Xamarin, I got few comments like in hybrid application development, host language interface with javascript is an important topic, so I thought of writing a blog post. 
 
 To access a C# function from javascript, first you need to create a class which inherits from Java.Lang.Object and implements Java.Lang.IRunnable interface, this interface contains only one method, Run(). Here is the implementation.
 

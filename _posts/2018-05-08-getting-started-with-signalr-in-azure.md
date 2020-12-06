@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about how to work with SignalR service in Azure. In Build 2018, Microsoft introduced SignalR in Azure as a service.
 
-Few days back I wrote a [post](https://dotnetthoughts.net/getting-started-with-signalr-using-aspnet-core/) on how to use SignalR in ASP.NET Core. In this post I am modifying the solution to use SignalR service. So first you need to create a SignalR service. Open Azure Portal. Click on new resource, search for SignalR, and select SignalR service.
+Few days back I wrote a [post](https://anuraj.dev/blog/getting-started-with-signalr-using-aspnet-core/) on how to use SignalR in ASP.NET Core. In this post I am modifying the solution to use SignalR service. So first you need to create a SignalR service. Open Azure Portal. Click on new resource, search for SignalR, and select SignalR service.
 
 ![SignalR Service]({{ site.url }}{{ site.baseurl }}/assets/images/2018/05/azure_signalr_service.png)
 

@@ -9,7 +9,7 @@ categories: [.Net, .Net 3.0 / 3.5, .Net 4.0, Visual Studio, Windows Forms]
 tags: [.Net, .Net 4.0, C#, C#.Net, Lync, Lync Bot, Windows Forms]
 header-img: "img/post-bg-01.jpg"
 ---
-Long back I wrote an [article](http://www.dotnetthoughts.net/building-a-language-translation-bot-using-skype-and-c/) on creating a language translation bot using Skype and C#, since Microsoft stopped Skype COM API, and I am using lync more than Skype, I thought of writing the same implementation using lync.
+Long back I wrote an [article](http://www.anuraj.dev/blog/building-a-language-translation-bot-using-skype-and-c/) on creating a language translation bot using Skype and C#, since Microsoft stopped Skype COM API, and I am using lync more than Skype, I thought of writing the same implementation using lync.
 
 The implementation is pretty same, you have to get the instance of the lync instance first, attach event handlers, translate and return the text back.  To make this post simple, I am not including the translation logic, I am reversing the text and sending back to the sender. 
 

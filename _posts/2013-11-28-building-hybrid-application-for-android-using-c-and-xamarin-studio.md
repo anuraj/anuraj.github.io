@@ -40,7 +40,7 @@ namespace HybridApp
 			//manage the link click, instead of opening the links in a seperate
 			//process.
 			myWebView.SetWebViewClient (new CustomWebViewClient ());
-			myWebView.LoadUrl ("http://www.dotnetthoughts.net");
+			myWebView.LoadUrl ("http://www.anuraj.dev/blog");
 			//Enable javascript
 			myWebView.Settings.JavaScriptEnabled = true;
 		}

@@ -47,9 +47,9 @@ using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-[assembly: FunctionsStartup(typeof(dotnetthoughts.net.Startup))]
+[assembly: FunctionsStartup(typeof(anuraj.dev/blog.Startup))]
 
-namespace dotnetthoughts.net
+namespace anuraj.dev/blog
 {
     public class Startup : FunctionsStartup
     {

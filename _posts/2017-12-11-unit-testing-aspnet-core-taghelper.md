@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about unit testing an ASP.NET Core tag helper. Tag Helpers enable server-side code to participate in creating and rendering HTML elements in Razor files. Unlike HTML helpers, Tag Helpers reduce the explicit transitions between HTML and C# in Razor views.
 
-In this post I am writing unit test for a [markdown tag helper](https://dotnetthoughts.net/markdown-tag-helper-for-aspnet-core/), I blogged about it long back. Here is the markdown tag helper code.
+In this post I am writing unit test for a [markdown tag helper](https://anuraj.dev/blog/markdown-tag-helper-for-aspnet-core/), I blogged about it long back. Here is the markdown tag helper code.
 
 {% highlight CSharp %}
 [HtmlTargetElement("markdown")]

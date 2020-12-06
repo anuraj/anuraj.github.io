@@ -24,7 +24,7 @@ You can generate QR code using following code
 {% highlight CSharp %}
 var writer = new BarcodeWriter();
 writer.Format = BarcodeFormat.QR_CODE;
-var result = writer.Write("http://www.dotnetthoughts.net");
+var result = writer.Write("http://www.anuraj.dev/blog");
 var barcodeBitmap = new Bitmap(result);
 barcodeBitmap.Save
     (context.Response.OutputStream, ImageFormat.Jpeg);

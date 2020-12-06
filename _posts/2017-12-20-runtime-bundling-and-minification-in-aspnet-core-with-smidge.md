@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Runtime bundling and Minification in ASP.NET Core with Smidge"
-subtitle: "This post is about enabling bundling and minification in ASP.NET Core with Smidge. Long back I wrote a [post](https://dotnetthoughts.net/bundling-and-minification-in-aspnet-core/) about bundling and minification in ASP.NET Core. But it was during the compile time or while publishing the app. But Smidge helps you to enable bundling and minification in runtime similar to earlier versions of ASP.NET MVC."
+subtitle: "This post is about enabling bundling and minification in ASP.NET Core with Smidge. Long back I wrote a [post](https://anuraj.dev/blog/bundling-and-minification-in-aspnet-core/) about bundling and minification in ASP.NET Core. But it was during the compile time or while publishing the app. But Smidge helps you to enable bundling and minification in runtime similar to earlier versions of ASP.NET MVC."
 date: 2017-12-20 00:00:00
 categories: [ASP.NET Core, Bundling, Minification, Smidge]
 tags: [ASP.NET Core, Bundling, Minification, Smidge]
 author: "Anuraj"
 ---
-This post is about enabling bundling and minification in ASP.NET Core with Smidge. Long back I wrote a [post](https://dotnetthoughts.net/bundling-and-minification-in-aspnet-core/) about bundling and minification in ASP.NET Core. But it was during the compile time or while publishing the app. But Smidge helps you to enable bundling and minification in runtime similar to earlier versions of ASP.NET MVC.
+This post is about enabling bundling and minification in ASP.NET Core with Smidge. Long back I wrote a [post](https://anuraj.dev/blog/bundling-and-minification-in-aspnet-core/) about bundling and minification in ASP.NET Core. But it was during the compile time or while publishing the app. But Smidge helps you to enable bundling and minification in runtime similar to earlier versions of ASP.NET MVC.
 
 First you need to create an ASP.NET Core MVC project. For managing the client side dependencies of this project, I am using `yarn` package manager. Here is my package.json file.
 

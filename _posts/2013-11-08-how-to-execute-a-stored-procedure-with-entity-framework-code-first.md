@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net MVC, EF Code First, Entity Framework, SQL Server]
 tags: [.Net, C#, Entity Framework Code First, Entity Framewrok, SQL Server, Stored Procedure]
 header-img: "img/post-bg-01.jpg"
 ---
-Recently I worked on a project, which I started as code first and then I forced to switch to Database first. This post is about executing procedures from EF code first.(This is an update version of [this post](http://www.dotnetthoughts.net/how-to-use-stored-procedure-in-entity-framework-code-first/) Here is my class structure and procedures.
+Recently I worked on a project, which I started as code first and then I forced to switch to Database first. This post is about executing procedures from EF code first.(This is an update version of [this post](http://www.anuraj.dev/blog/how-to-use-stored-procedure-in-entity-framework-code-first/) Here is my class structure and procedures.
 
 {% highlight CSharp %}
 class DatabaseContext : DbContext

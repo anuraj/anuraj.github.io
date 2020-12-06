@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net, ASP.Net MVC, Version Control]
 tags: [.Net, ASP.NET 5, ASP.Net MVC, ASP.Net vNext, C#, Continuous integration, Travis CI, Unit Testing]
 header-img: "img/post-bg-01.jpg"
 ---
-Few days back I did a [post ](http://www.dotnetthoughts.net/continuous-integration-with-asp-net-5-github-and-travis-ci/)on Continuous Integration with ASP.NET 5, GitHub and Travis CI. In that post I was using K runtime and K commands. From ASP.NET 5 Beta 4, Microsoft changed the runtime to DNX, the K runtime became obsolete. This post is about continuous integration using DNX runtime. Only minor changes are required. Here is the .travis.yml file. 
+Few days back I did a [post ](http://www.anuraj.dev/blog/continuous-integration-with-asp-net-5-github-and-travis-ci/)on Continuous Integration with ASP.NET 5, GitHub and Travis CI. In that post I was using K runtime and K commands. From ASP.NET 5 Beta 4, Microsoft changed the runtime to DNX, the K runtime became obsolete. This post is about continuous integration using DNX runtime. Only minor changes are required. Here is the .travis.yml file. 
 
 {% highlight text %}
 language: CSharp

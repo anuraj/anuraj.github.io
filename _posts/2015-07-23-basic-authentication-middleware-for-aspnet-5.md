@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net, ASP.Net MVC, Visual Studio, Web API]
 tags: [.Net, ASP.NET 5, ASP.Net MVC, ASP.Net vNext, C#, Middleware]
 header-img: "img/post-bg-01.jpg"
 ---
-This post is about building another middleware component for ASP.NET 5. Long back I wrote a post about <a href="http://www.dotnetthoughts.net/basic-http-authentication-in-asp-net-web-api/" target="_blank">Basic authentication for Web API</a>. This implementation uses the same functionality. It checks for Authorization header in the HTTP Request, if not found it set the Response status code to 401 and adds a WWW-Authenticate header. When browser receives such response, it will show the Basic authentication dialog. If the header is set, you can parse the header and validate the credentials against database. Here is the implementation.
+This post is about building another middleware component for ASP.NET 5. Long back I wrote a post about <a href="http://www.anuraj.dev/blog/basic-http-authentication-in-asp-net-web-api/" target="_blank">Basic authentication for Web API</a>. This implementation uses the same functionality. It checks for Authorization header in the HTTP Request, if not found it set the Response status code to 401 and adds a WWW-Authenticate header. When browser receives such response, it will show the Basic authentication dialog. If the header is set, you can parse the header and validate the credentials against database. Here is the implementation.
 
 {% highlight CSharp %}
 public async Task Invoke(HttpContext context)
@@ -31,7 +31,7 @@ public async Task Invoke(HttpContext context)
     else
     {
         context.Response.StatusCode = 401;
-        context.Response.Headers.Set("WWW-Authenticate", "Basic realm=\"dotnetthoughts.net\"");
+        context.Response.Headers.Set("WWW-Authenticate", "Basic realm=\"anuraj.dev/blog\"");
     }
     await _next(context);
 }

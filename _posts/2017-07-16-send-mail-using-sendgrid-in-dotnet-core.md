@@ -18,12 +18,12 @@ In ASP.NET Core 2.0, you can use this to send email using `SmtpClient` API.
 {% highlight CSharp %}
 var mailMessage = new MailMessage
 {
-    From = new MailAddress("support@dotnetthoughts.net"),
+    From = new MailAddress("support@anuraj.dev/blog"),
     Subject = "Hello World",
     Body = "Test email from Send Grid SMTP Settings"
 };
 
-mailMessage.To.Add("anuraj@dotnetthoughts.net");
+mailMessage.To.Add("anuraj@anuraj.dev/blog");
 
 var smtpClient = new SmtpClient
 {
@@ -53,7 +53,7 @@ private async Task SendEmail(string email, string subject, string htmlContent)
 {
     var apiKey = "YOUR SENDGRID API Key";
     var client = new SendGridClient(apiKey);
-    var from = new EmailAddress("support@dotnetthoughts.net", "Support");
+    var from = new EmailAddress("support@anuraj.dev/blog", "Support");
     var to = new EmailAddress(email);
     var plainTextContent = Regex.Replace(htmlContent, "<[^>]*>", "");
     var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);

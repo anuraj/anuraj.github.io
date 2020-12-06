@@ -54,9 +54,9 @@ Now you can run the function using `func start`. It will start the function and 
 
 ![QR Code generator Function running]({{ site.url }}{{ site.baseurl }}/assets/images/2020/11/qrgen_running.png)
 
-Open the URL in the browser with a URL parameter like this - `http://localhost:7071/api/QRGenerator?url=https://dotnetthoughts.net`, now it will execute the code and it will generate the QR code and display it in the browser.
+Open the URL in the browser with a URL parameter like this - `http://localhost:7071/api/QRGenerator?url=https://anuraj.dev/blog`, now it will execute the code and it will generate the QR code and display it in the browser.
 
-Here is the QR Code of `https://dotnetthoughts.net`.
+Here is the QR Code of `https://anuraj.dev/blog`.
 
 ![QR Code generator Output]({{ site.url }}{{ site.baseurl }}/assets/images/2020/11/qrcode_generator.png)
 

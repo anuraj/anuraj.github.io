@@ -48,7 +48,7 @@ foreach (var sourceImage in sourceImages)
 }
 {% endhighlight %}
 
-Once you implemented it, you can run a "dotnet restore" command to restore the nuget packages and you can test it with "dotnet run" command. Once everything works fine you can use the "dotnet pack" command to create nuget package for the tool. To verify the implementation as a tool, you can create a local nuget infrastructure and use it. Here is [one post](https://dotnetthoughts.net/using-nuget-packages-in-aspnet-core/) which will help you to implement it. Open the project that you want to use the new tool with using Visual Studio Code (or any text editor). The new tool will need to be added to the tools section of the project.json file, like this.
+Once you implemented it, you can run a "dotnet restore" command to restore the nuget packages and you can test it with "dotnet run" command. Once everything works fine you can use the "dotnet pack" command to create nuget package for the tool. To verify the implementation as a tool, you can create a local nuget infrastructure and use it. Here is [one post](https://anuraj.dev/blog/using-nuget-packages-in-aspnet-core/) which will help you to implement it. Open the project that you want to use the new tool with using Visual Studio Code (or any text editor). The new tool will need to be added to the tools section of the project.json file, like this.
 
 {% highlight Javascript %}
 "tools": {

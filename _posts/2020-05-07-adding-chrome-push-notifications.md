@@ -116,9 +116,9 @@ Next use Postman to send notification. Open Postman, Select HTTP method as `POST
         "notification": {
             "title": "New Blog post : Introduction to Microsoft DevSkim",
             "body": "This post is about Microsoft DevSkim. DevSkim is a framework of IDE extensions and Language analyzers that provide inline security analysis in the dev environment as the developer writes code.",
-            "image": "https://dotnetthoughts.net/assets/images/2020/03/devskim_visualstudio.png",
-            "url": "https://dotnetthoughts.net/introduction-to-devskim/",
-            "icon":"https://dotnetthoughts.net/favicon.ico"
+            "image": "https://anuraj.dev/blog/assets/images/2020/03/devskim_visualstudio.png",
+            "url": "https://anuraj.dev/blog/introduction-to-devskim/",
+            "icon":"https://anuraj.dev/blog/favicon.ico"
         }
     },
     "to": "TOKEN_FROM_BROWSER_CONSOLE"

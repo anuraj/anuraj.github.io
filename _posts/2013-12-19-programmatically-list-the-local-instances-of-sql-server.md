@@ -9,7 +9,7 @@ categories: [.Net, .Net 4.0, SQL Server, Windows Forms]
 tags: [.Net, C#, SQL Server, Windows Forms]
 header-img: "img/post-bg-01.jpg"
 ---
-Long back I wrote a post about [Enumerating Instances of SQL Server using C](http://www.dotnetthoughts.net/enumerating-instances-of-sql-server-using-c/). But this code snippet will not list your sql server instances installed on your system. Here is the code snippet using Windows registry which will list all the local instances of sql server.
+Long back I wrote a post about [Enumerating Instances of SQL Server using C](http://www.anuraj.dev/blog/enumerating-instances-of-sql-server-using-c/). But this code snippet will not list your sql server instances installed on your system. Here is the code snippet using Windows registry which will list all the local instances of sql server.
 
 {% highlight CSharp %}
 var baseKey = RegistryKey.OpenBaseKey(

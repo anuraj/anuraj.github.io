@@ -9,7 +9,7 @@ categories: [.Net, .Net 4.0, ASP.Net, ASP.Net MVC, EF Code First, Entity Framewo
 tags: [Code Generation, Database Entities, SQL Server, T4 Templates]
 header-img: "img/post-bg-01.jpg"
 ---
-Long back I wrote some post about [code generation using T4 templates](http://www.dotnetthoughts.net/code-generation-using-t4-templates/). This post is about generating database entities using T4 templates. This code is pretty straight forward, you are reading the app.config to get the connection string, connecting to db server using Sql Server SMO objects, enumerating tables and columns.
+Long back I wrote some post about [code generation using T4 templates](http://www.anuraj.dev/blog/code-generation-using-t4-templates/). This post is about generating database entities using T4 templates. This code is pretty straight forward, you are reading the app.config to get the connection string, connecting to db server using Sql Server SMO objects, enumerating tables and columns.
 
 Here is the code, which will read the App.Config file and get the connection string. (I am using a connection string with name, Default).
 

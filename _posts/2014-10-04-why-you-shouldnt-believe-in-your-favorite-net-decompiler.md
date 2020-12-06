@@ -9,7 +9,7 @@ categories: [.Net, .Net 4.0, CodeProject, Miscellaneous, Visual Studio]
 tags: [.Net, .Net 4.0, C#, C#.Net, Decompiler]
 header-img: "img/post-bg-01.jpg"
 ---
-Yesterday I posted about [explicit interface implementation](http://www.dotnetthoughts.net/explicit-interface-implementation-in-c/). I was curious about to know how CLR treats Explicit interface implementation. I looked into the generated IL code using IL DASM, and it was pretty similar to C# code I wrote. So I thought of reverse engineering the assembly. I verified the assembly with five .net decompilers. And only two provided the compilable code. Here is the .Net decompilers I used.
+Yesterday I posted about [explicit interface implementation](http://www.anuraj.dev/blog/explicit-interface-implementation-in-c/). I was curious about to know how CLR treats Explicit interface implementation. I looked into the generated IL code using IL DASM, and it was pretty similar to C# code I wrote. So I thought of reverse engineering the assembly. I verified the assembly with five .net decompilers. And only two provided the compilable code. Here is the .Net decompilers I used.
 
 
 

@@ -24,11 +24,11 @@ But if you try to access it, it will return internal server error. It is because
         "version": "1.0.0",
         "title": "QR Code Generator",
         "description": "A serverless Azure Function which helps you to create QR code for URLs.",
-        "termsOfService": "https://dotnetthoughts.net/",
+        "termsOfService": "https://anuraj.dev/blog/",
         "contact": {
             "name": "anuraj",
-            "email": "anuraj at dotnetthoughts.net",
-            "url": "https://dotnetthoughts.net/"
+            "email": "anuraj at anuraj.dev/blog",
+            "url": "https://anuraj.dev/blog/"
         },
         "license": {
             "name": "MIT",

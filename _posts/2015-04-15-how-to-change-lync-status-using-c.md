@@ -9,7 +9,7 @@ categories: [.Net, .Net 3.0 / 3.5, .Net 4.0, Windows Forms]
 tags: [.Net, C#, Lync, Lync Availability, Windows Forms]
 header-img: "img/post-bg-01.jpg"
 ---
-Another Lync post :) This snippet will help you to change the lync status(available, away, busy etc) using C# and Lync API. As I mentioned in the earlier [post](http://www.dotnetthoughts.net/building-a-lync-bot-using-c/), you need to install the Lync SDK. 
+Another Lync post :) This snippet will help you to change the lync status(available, away, busy etc) using C# and Lync API. As I mentioned in the earlier [post](http://www.anuraj.dev/blog/building-a-lync-bot-using-c/), you need to install the Lync SDK. 
 
 Here is the snippet
 

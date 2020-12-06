@@ -26,7 +26,7 @@ steps:
   displayName: 'ZAP Scanner'
   inputs:
     scantype: targetedScan
-    url: 'https://dotnetthoughts.net'
+    url: 'https://anuraj.dev/blog'
 
 - bash: |
    sudo npm install -g handlebars-cmd

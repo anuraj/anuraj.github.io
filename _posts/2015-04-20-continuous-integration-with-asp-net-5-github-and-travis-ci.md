@@ -66,7 +66,7 @@ public void VerifyCreateEmployeeInsertData()
 }
 {% endhighlight %}
 
-I have added only two unit tests for create method. I am using almost same code as I mentioned in this post - [Creating Unit Tests for ASP.NET MVC 6 Applications](http://www.dotnetthoughts.net/creating-unit-tests-for-asp-net-mvc-6-applications/).
+I have added only two unit tests for create method. I am using almost same code as I mentioned in this post - [Creating Unit Tests for ASP.NET MVC 6 Applications](http://www.anuraj.dev/blog/creating-unit-tests-for-asp-net-mvc-6-applications/).
 
 Now you need to create the project.json file, to compile and test.
 

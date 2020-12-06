@@ -7,7 +7,7 @@ categories: [Angular,Azure,Azure DevOps]
 tags: [Angular,Azure,Azure DevOps]
 author: "Anuraj"
 ---
-This post is about how to deploy your Angular application to Azure storage to build a static website. Long back I wrote a [blog post](https://dotnetthoughts.net/simple-static-websites-using-azure-blob-service/) about how to use Azure Blob as a hosting service for your static website. In this post I will configure Azure DevOps pipeline to deploy a Angular application to Azure Blob.
+This post is about how to deploy your Angular application to Azure storage to build a static website. Long back I wrote a [blog post](https://anuraj.dev/blog/simple-static-websites-using-azure-blob-service/) about how to use Azure Blob as a hosting service for your static website. In this post I will configure Azure DevOps pipeline to deploy a Angular application to Azure Blob.
 
 First you need to create an Angular application. Instead of creating one, I downloaded an existing Angular project and added to Azure DevOps repository. Next I modified the `package.json` file and updated the build command like the following.
 

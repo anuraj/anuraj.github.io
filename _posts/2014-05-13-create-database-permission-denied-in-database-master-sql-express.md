@@ -9,7 +9,7 @@ categories: [.Net, .Net 4.0, ASP.Net MVC, EF Code First, Entity Framework, SQL S
 tags: [.Net, .Net 4.0, ASP.Net MVC, Entity Framework Code First, Entity Framewrok, SQL Server]
 header-img: "img/post-bg-01.jpg"
 ---
-Long back I wrote a post about [Entity Framework Error â€“ The underlying provider failed on Open](http://www.dotnetthoughts.net/?p=3775). Yesterday some one told me, he is getting this error - CREATE DATABASE permission denied in database â€˜masterâ€™, he is using an application pool with NETWORK SERVICE identity. Here is the solution, you require SysAdmin Role for "NT AUTHORITY\NETWORK SERVICE" to resolve this issue. 
+Long back I wrote a post about [Entity Framework Error â€“ The underlying provider failed on Open](http://www.anuraj.dev/blog/?p=3775). Yesterday some one told me, he is getting this error - CREATE DATABASE permission denied in database â€˜masterâ€™, he is using an application pool with NETWORK SERVICE identity. Here is the solution, you require SysAdmin Role for "NT AUTHORITY\NETWORK SERVICE" to resolve this issue. 
 
 ![Setting the SysAdmin Role for Network Service]({{ site.url }}{{ site.baseurl }}/assets/images/2014/05/sysadmin_role.png)
 

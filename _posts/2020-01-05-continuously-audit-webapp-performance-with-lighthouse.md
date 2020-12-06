@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about how audit web applications using Google lighthouse and Azure DevOps. Lighthouse is an open-source, automated tool for improving the quality of web pages. Lighthouse can audit for performance, accessibility, progressive web apps, SEO and more. There is a [LightHouse extension](https://github.com/gsoft-inc/azure-pipelines-lighthouse) available in Azure DevOps. But in this post I am not using any marketplace extensions. Instead I am using some node and powershell scripts.
 
-First we will configure and execute lighthouse audit locally. You can install lighthouse CLI using `npm install -g lighthouse` command. Once lighthouse installed, you can run the following command to run the audit - `lighthouse https://dotnetthoughts.net/ --quiet --chrome-flags="--headless"` This command will run the audit and create an HTML output file.
+First we will configure and execute lighthouse audit locally. You can install lighthouse CLI using `npm install -g lighthouse` command. Once lighthouse installed, you can run the following command to run the audit - `lighthouse https://anuraj.dev/blog/ --quiet --chrome-flags="--headless"` This command will run the audit and create an HTML output file.
 
 ![Lighthouse scan report]({{ site.url }}{{ site.baseurl }}/assets/images/2020/01/lighthouse_ci_result.png)
 
@@ -32,7 +32,7 @@ And for making the easy management, instead of installing the lighthouse directl
   },
   "devDependencies": {},
   "scripts": {
-    "scan-dotnetthoughts": "lighthouse https://dotnetthoughts.net/ --quiet --chrome-flags=\"--headless\"
+    "scan-dotnetthoughts": "lighthouse https://anuraj.dev/blog/ --quiet --chrome-flags=\"--headless\"
   },
   "author": "anuraj",
   "license": "MIT"
@@ -45,7 +45,7 @@ So in the build pipeline, first I will run `npm install` and in the next build s
 
 As I mentioned earlier this report is good if you're sharing the report to clients or stakeholders - but as a developer I am more interested to see the results more insightful way - like tests. So that I can compare how many new issues are coming, and how we are improved all those details. To do that I am adding few more build steps - which will convert the output from lighthouse (there is an option to generate JSON output along with HTML) as JUnit results xml file.
 
-So I am modifying the script command like this - `"lighthouse https://dotnetthoughts.net/ --quiet --chrome-flags=\"--headless\" --output json --output html --output-path ./dotnetthoughts"`
+So I am modifying the script command like this - `"lighthouse https://anuraj.dev/blog/ --quiet --chrome-flags=\"--headless\" --output json --output html --output-path ./dotnetthoughts"`
 
 Next I am adding a powershell script with Inline text - this powershell script will parse the JSON and convert it to XML which is compatible with JUnit text results. And we copy the JUnit XML files and publish it as Test results using the Publish Test Results build step. Here is the updated build pipeline.
 

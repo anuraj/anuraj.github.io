@@ -9,7 +9,7 @@ author: "Anuraj"
 ---
 This post is about deploying an ASP.NET Core application to Heroku. Heroku is a cloud Platform-as-a-Service (PaaS) supporting several programming languages that is used as a web application deployment model.
 
-Long back I wrote a [blog post](https://dotnetthoughts.net/hosting-aspnet-core-applications-on-heroku-using-docker/) on deploying ASP.NET Core application in Heroku using Docker. In this post I am not using Docker. Instead I am using Heroku native GitHub integration and buildpacks.
+Long back I wrote a [blog post](https://anuraj.dev/blog/hosting-aspnet-core-applications-on-heroku-using-docker/) on deploying ASP.NET Core application in Heroku using Docker. In this post I am not using Docker. Instead I am using Heroku native GitHub integration and buildpacks.
 
 First I am creating a Heroku app in Heroku.
 

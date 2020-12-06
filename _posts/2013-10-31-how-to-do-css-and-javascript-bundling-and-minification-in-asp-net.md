@@ -9,7 +9,7 @@ categories: [.Net, .Net 4.0, ASP.Net, Javascript]
 tags: [.Net, ASP.Net, C#, CSS, Javascript]
 header-img: "img/post-bg-01.jpg"
 ---
-ASP.NET 4.5 includes a new feature to minify and bundle CSS and JavaScript within your web application. Static content like javascript and css files contains lot of white spaces and comments. Bundling and minification improves load time by reducing the number of requests to the server and reducing the size of requested assets (such as CSS and JavaScript.) In the past, the recommended technique was enabling compression either using programmatically (I have a post on [enabling compression in asp.net](http://www.dotnetthoughts.net/http-compression-in-asp-net/) using Http Module.), or you can configure it in IIS. But it was difficult configure and has got some performance issues.
+ASP.NET 4.5 includes a new feature to minify and bundle CSS and JavaScript within your web application. Static content like javascript and css files contains lot of white spaces and comments. Bundling and minification improves load time by reducing the number of requests to the server and reducing the size of requested assets (such as CSS and JavaScript.) In the past, the recommended technique was enabling compression either using programmatically (I have a post on [enabling compression in asp.net](http://www.anuraj.dev/blog/http-compression-in-asp-net/) using Http Module.), or you can configure it in IIS. But it was difficult configure and has got some performance issues.
 
 Here is a sample web application, which contains 6 style sheets and 3 javascript files, and this is network traffic before css and javascript bundling and minification.
 

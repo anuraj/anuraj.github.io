@@ -9,7 +9,7 @@ categories: [.Net, ASP.Net, Entity Framework, Web API]
 tags: [.Net, ASP.Net, C#, Entity Framewrok, WebAPI]
 header-img: "img/post-bg-01.jpg"
 ---
-In the [last post](http://www.dotnetthoughts.net/?p=3640) we implemented CRUD operations with Web API. According to HTTP method definitions, all the HTTP requests should return a HTTP response, which consists of 
+In the [last post](http://www.anuraj.dev/blog/?p=3640) we implemented CRUD operations with Web API. According to HTTP method definitions, all the HTTP requests should return a HTTP response, which consists of 
 
 
 
@@ -56,7 +56,7 @@ X-Powered-By: ASP.NET
 Date: Sun, 01 Sep 2013 06:05:18 GMT
 Content-Length: 89
 
-[{"Id":1,"Name":"Employee1","Email":"employee1@dotnetthoughts.net","Phone":"0013456732"}]
+[{"Id":1,"Name":"Employee1","Email":"employee1@anuraj.dev/blog","Phone":"0013456732"}]
 {% endhighlight %}
 
 And to get a selected employee, you can send Get Request with Id. Here is the service implementation.

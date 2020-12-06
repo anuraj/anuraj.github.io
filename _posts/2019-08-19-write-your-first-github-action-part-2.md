@@ -7,7 +7,7 @@ categories: [CI,GitHub Actions,ASPNET Core]
 tags: [CI,GitHub Actions,ASPNET Core]
 author: "Anuraj"
 ---
-In the [last post](https://dotnetthoughts.net/write-your-first-github-action-part-1/) we learned about working with GitHub actions and creating a CI workflow for our dotnet core application. In this post, we will learn how to deploy the middleware to nuget.org using `dotnet nuget push` command.
+In the [last post](https://anuraj.dev/blog/write-your-first-github-action-part-1/) we learned about working with GitHub actions and creating a CI workflow for our dotnet core application. In this post, we will learn how to deploy the middleware to nuget.org using `dotnet nuget push` command.
 
 The `dotnet pack` command helps you to create nuget package from our dotnet core applications. So first we need to add one more step in the action for building the nuget package and another step to deploy it to nuget.org. If you don't have account in nuget.org, you need to create an account, and we need to get API Key for deploying the package.
 

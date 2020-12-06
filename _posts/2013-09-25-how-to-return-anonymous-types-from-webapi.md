@@ -19,8 +19,8 @@ public HttpResponseMessage Get()
     var developer = new
     {
         Name = "anuraj",
-        Email = "anuraj.p@dotnetthoughts.net",
-        Url = "https://dotnetthoughts.net"
+        Email = "anuraj.p@anuraj.dev/blog",
+        Url = "https://anuraj.dev/blog"
     };
 
     return Request.CreateResponse(HttpStatusCode.OK, developer);
