@@ -1,0 +1,40 @@
+title: anuraj
+tagline: a dotnet developer's technical journal
+description: a dotnet developer's technical journal
+url: "https://anuraj.dev"
+disqus_shortname: anuraj-dev
+google_analytics: 'UA-12179122-1'
+baseurl: "/blog"
+future: false
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+permalink: /:title/
+paginate: 7
+page_excerpts: true
+logo: /assets/logo.png
+feed:
+  posts_limit: 10
+seo_paginator_message: anuraj | a dotnet developer's technical journal
+author:
+  twitter: anuraj
+twitter:
+  username: anuraj
+  card: summary_large_image
+social:
+  name: Anuraj
+  links:
+    - https://twitter.com/anuraj
+    - https://www.linkedin.com/in/anurajp
+    - https://github.com/anuraj
+compress_html:
+  clippings: all
+  comments: all
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]

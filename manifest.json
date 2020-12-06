@@ -1,0 +1,34 @@
+{
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "anuraj.dev",
+    "app_name": "anuraj.dev",
+    "short_name": "anuraj.dev",
+    "orientation": "natural",
+    "description": "a dotnet developer\u2019s technical journal - you can find articles about aspnet core, dotnet, unit testing, devops and azure",
+    "icons": [
+        {
+            "src": "/assets/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

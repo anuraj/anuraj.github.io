@@ -1,0 +1,47 @@
+{% if page.permalink != '/privacy/' %}
+<div class="p-4 mb-3 bg-light rounded">
+    <h4 class="font-italic">About</h4>
+    <p class="mb-0">
+        <img src="{{site.url}}/assets/me.png" width="200" height="200" alt="Anuraj P"
+            class="img-fluid rounded-circle mx-auto d-block" /><br />
+        <a href="https://mvp.microsoft.com/en-us/PublicProfile/5002040" target="_blank">Microsoft MVP</a>, Full Stack
+        Developer, .NET Architect, Technical Evangelist, Technology Expert and Product
+        Architect @ <a href="https://socxo.com" target="_blank">Socxo</a>
+    </p>
+</div>
+
+<div class="p-4">
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+        data-ad-client="ca-pub-2446392180502199" data-ad-slot="3007017249"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+<div class="p-4">
+    <h4 class="font-italic">Subscribe</h4>
+    <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
+        onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=dotnetthoughts', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <div class="form-group">
+            <input type="text" class="form-control" name="email" id="email" placeholder="Enter your email address" />
+        </div>
+        <input type="submit" class="btn btn-secondary" value="Subscribe" />
+        <input type="hidden" value="dotnetthoughts" name="uri" /><input type="hidden" name="loc" value="en_US" />
+    </form>
+</div>
+{% if paginator.page != 1 %}
+<div class="p-4">
+    <h4 class="font-italic">Recent Posts</h4>
+    <ul class="list-group list-group-flush">
+        {% for post in site.posts limit:5 %}
+        <li class="list-group-item pl-0">
+            <a href="{{ post.url }}">
+                {{ post.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+</aside>
+{% endif %}

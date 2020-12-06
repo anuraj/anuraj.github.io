@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ page.title }}</a></h2>
+    <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="{{ site.url }}/about">{{ page.author }}</a>
+    </p>
+    <p class="blog-post-meta">
+        {% for category in page.categories %}
+		<span class="badge badge-secondary">{{ category }}</span>
+	    {% endfor %}
+    </p>
+    <p>
+        {{ content }}
+    </p>
+    <p>
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-2446392180502199"
+    data-ad-slot="4196250843"
+    data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </p>
+    <p>
+        <div id="disqus_thread"></div>
+    </p>
+</div>

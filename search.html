@@ -1,0 +1,19 @@
+---
+layout: page
+title: Search
+permalink: /search/
+---
+
+<input type="text" id="search-input" class="form-control" placeholder="Search blog posts..">
+<div id="results-container" class="list-group list-group-flush"></div>
+
+<!-- or without installing anything -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+    var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<a target="_blank" class="list-group-item list-group-item-action" href="{{ site.url }}{url}"><div class="d-flex justify-content-between"><h5 class="mb-1">{title}</h5></div><p class="mb-1">{subtitle}</p></a>'
+    });
+</script>

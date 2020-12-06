@@ -1,0 +1,55 @@
+---
+layout: default
+description: a dotnet developer's technical journal - you can find articles about aspnet core, dotnet, unit testing, devops and azure
+title: dotnetthoughts
+---
+
+{% if paginator.page == 1 %}
+{% for post in paginator.posts offset:3 %}
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ post.title }}</a></h2>
+    <p class="blog-post-meta">{{ post.date | date_to_string }} by <a href="{{ site.url }}/about">{{ post.author }}</a>
+    </p>
+    <p class="blog-post-meta">
+        {% for category in post.categories %}
+        <span class="badge badge-secondary">{{ category }}</span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
+</div>
+<hr />
+{% endfor %}
+{% else %}
+{% for post in paginator.posts %}
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ site.url }}{{ post.url }}" class="text-dark">{{ post.title }}</a></h2>
+    <p class="blog-post-meta">{{ post.date | date_to_string }} by <a href="{{ site.url }}/about">{{ post.author }}</a>
+    </p>
+    <p class="blog-post-meta">
+        {% for category in post.categories %}
+        <span class="badge badge-secondary">{{ category }}</span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ post.content | markdownify | strip_html | truncatewords: 50 }}
+    </p>
+</div>
+<hr />
+{% endfor %}
+{% endif %}
+
+
+<nav class="blog-pagination">
+    {% if paginator.next_page  %}
+    <a class="btn btn-outline-primary" href="{{ paginator.next_page_path  }}">Older</a>
+    {% else %}
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Older</a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a class="btn btn-outline-primary" href="{{ paginator.previous_page_path }}">Newer</a>
+    {% else %}
+    <a class="btn btn-outline-secondary disabled" href="javascript:;" tabindex="-1">Newer</a>
+    {% endif %}
+</nav>
