@@ -12,7 +12,8 @@ paginate: true
                 {{ post.title }}
             </a>
         </h2>
-        <p>{{ post.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}/about">{{ post.author }}</a></p>
+        <p>{{ post.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none"
+                href="{{ site.url }}/about">{{ post.author }}</a></p>
         <p>
             {% for category in post.categories %}
             <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
@@ -38,6 +39,10 @@ paginate: true
             <a class="page-link">Previous</a>
         </li>
         {% endif %}
+        <li class="page-item">
+            <span class="text-body-emphasis text-decoration-none page-link disabled">Page: {{ paginator.page }} of {{
+                paginator.total_pages }}</span>
+        </li>
         {% if paginator.next_page %}
         <li class="page-item">
             <a class="text-body-emphasis text-decoration-none page-link" href="{{ paginator.next_page_path }}">Next</a>
@@ -52,13 +57,18 @@ paginate: true
 
 <div class="py-5 text-center text-body-secondary border-top">
     <p class="ms-2 me-2">
-        Copyright &copy; {{ site.time | date: '%Y' }}&nbsp;<a class="text-body-emphasis text-decoration-none" href="{{site.url}}/about">Anuraj</a>. Blog content
+        Copyright &copy; {{ site.time | date: '%Y' }}&nbsp;<a class="text-body-emphasis text-decoration-none"
+            href="{{site.url}}/about">Anuraj</a>. Blog content
         licensed under the Creative
-        Commons&nbsp;<a class="text-body-emphasis text-decoration-none" href="https://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY
+        Commons&nbsp;<a class="text-body-emphasis text-decoration-none"
+            href="https://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY
             2.5</a> |
-        Unless otherwise stated or granted, code samples licensed under the <a class="text-body-emphasis text-decoration-none" href="https://anuraj.mit-license.org/"
-            rel="noopener" target="_blank">MIT license</a>. This is a
+        Unless otherwise stated or granted, code samples licensed under the <a
+            class="text-body-emphasis text-decoration-none" href="https://anuraj.mit-license.org/" rel="noopener"
+            target="_blank">MIT license</a>. This is a
         personal blog. The opinions expressed here
-        represent my own and not those of my employer. Powered by Jekyll. Hosted with ❤ by <a class="text-body-emphasis text-decoration-none" href="https://github.com/" rel="noopener" target="_blank">GitHub</a>
+        represent my own and not those of my employer. Powered by Jekyll. Hosted with ❤ by <a
+            class="text-body-emphasis text-decoration-none" href="https://github.com/" rel="noopener"
+            target="_blank">GitHub</a>
     </p>
 </div>
