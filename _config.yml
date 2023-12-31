@@ -20,3 +20,19 @@ feed:
   posts_limit: 5
   excerpt_only: true
   path: /blog/feed.rss
+seo_paginator_message: anuraj.dev | a dotnet developer's technical journal
+author:
+  twitter: anuraj
+twitter:
+  username: anuraj
+  card: summary_large_image
+social:
+  name: Anuraj
+  links:
+    - https://twitter.com/anuraj
+    - https://www.linkedin.com/in/anurajp
+    - https://github.com/anuraj
+compress_html:
+  clippings: all
+  comments: all
+  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
