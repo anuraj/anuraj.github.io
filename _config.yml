@@ -1,0 +1,21 @@
+title: anuraj.dev
+baseurl: "/"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
+permalink: /blog/:title/
+paginate: 5
+paginate_path: "/blog/:num/"
+page_excerpts: true
+logo: /assets/logo.png
+feed:
+  posts_limit: 5
+  excerpt_only: true
+  path: /blog/feed.rss

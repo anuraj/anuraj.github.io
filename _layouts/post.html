@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<h2 class="display-5">
+    <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}{{ page.url }}">
+        {{ page.title }}
+    </a>
+</h2>
+<p>{{ page.date | date: '%B %d, %Y' }} by <a href="{{ site.url }}/about">{{ page.author }}</a></p>
+<p>
+    {% for category in page.categories %}
+    <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
+    {% endfor %}
+</p>
+<p>
+    {{ content }}
+</p>
+
+<div class="py-5 text-center text-body-secondary border-top">
+    <p class="ms-2 me-2">
+        Copyright &copy; {{ site.time | date: '%Y' }}&nbsp;<a class="text-body-emphasis text-decoration-none" href="{{site.url}}/about">Anuraj</a>. Blog content
+        licensed under the Creative
+        Commons&nbsp;<a class="text-body-emphasis text-decoration-none" href="https://creativecommons.org/licenses/by/2.5/" rel="noopener" target="_blank">CC BY
+            2.5</a> |
+        Unless otherwise stated or granted, code samples licensed under the <a class="text-body-emphasis text-decoration-none" href="https://anuraj.mit-license.org/"
+            rel="noopener" target="_blank">MIT license</a>. This is a
+        personal blog. The opinions expressed here
+        represent my own and not those of my employer. Powered by Jekyll. Hosted with ❤ by <a class="text-body-emphasis text-decoration-none" href="https://github.com/" rel="noopener" target="_blank">GitHub</a>
+    </p>
+</div>
