@@ -18,7 +18,7 @@ paginate: true
             <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
             {% endfor %}
         </p>
-        <p>
+        <p class="lead">
             {{ post.excerpt | markdownify | strip_html }}
         </p>
     </li>

@@ -7,7 +7,7 @@ layout: default
         {{ page.title }}
     </a>
 </h2>
-<p>{{ page.date | date: '%B %d, %Y' }} by <a href="{{ site.url }}/about">{{ page.author }}</a></p>
+<p>{{ page.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}/about">{{ page.author }}</a></p>
 <p>
     {% for category in page.categories %}
     <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
