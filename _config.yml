@@ -1,4 +1,5 @@
 title: anuraj.dev
+url: "https://anuraj.dev"
 baseurl: "/"
 plugins:
   - jekyll-sitemap
