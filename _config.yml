@@ -1,4 +1,5 @@
 title: anuraj.dev
+description: a dotnet developer's technical journal
 url: "https://anuraj.dev"
 baseurl: "/"
 plugins:
@@ -20,6 +21,7 @@ feed:
   posts_limit: 5
   excerpt_only: true
   path: /blog/feed.rss
+github: [metadata]
 seo_paginator_message: anuraj.dev | a dotnet developer's technical journal
 author:
   twitter: anuraj
