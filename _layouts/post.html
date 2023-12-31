@@ -7,7 +7,8 @@ layout: default
         {{ page.title }}
     </a>
 </h1>
-<p>{{ page.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}/about">{{ page.author }}</a></p>
+<p>{{ page.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none"
+        href="{{ site.url }}/about">{{ page.author }}</a></p>
 <p>
     {% for category in page.categories %}
     <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
@@ -18,14 +19,9 @@ layout: default
 </p>
 
 <p>
-    <script src="https://utteranc.es/client.js"
-        repo="anuraj/anuraj.github.io"
-        issue-term="url"
-        label="Blog"
-        theme="preferred-color-scheme"
-        crossorigin="anonymous"
-        async>
-    </script>
+    <script src="https://utteranc.es/client.js" repo="anuraj/anuraj.github.io" issue-term="url" label="Blog"
+        theme="preferred-color-scheme" crossorigin="anonymous" async>
+        </script>
 </p>
 
 <div class="py-5 text-center text-body-secondary border-top">
@@ -45,3 +41,41 @@ layout: default
             target="_blank">GitHub</a>
     </p>
 </div>
+
+<div class="modal fade" id="ImagePopup" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="PopupTitle"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img id="PopupImage" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var images = document.getElementsByTagName("img");
+    for (var i = 0; i < images.length; i++) {
+        var el = images[i];
+        if (!el.getAttribute("class")) {
+            el.setAttribute("class", "img-fluid mx-auto d-block");
+            el.style.cursor = "pointer";
+            el.setAttribute("alt", el.alt);
+            el.setAttribute("onclick", "ShowImage(this)");
+        }
+    }
+
+    function ShowImage(el) {
+        var title = el.getAttribute("alt");
+        var src = el.getAttribute("src");
+        var popupTitle = document.getElementById("PopupTitle");
+        popupTitle.innerHTML = title;
+        var popupImage = document.getElementById("PopupImage");
+        popupImage.setAttribute("src", src);
+        var popup = new bootstrap.Modal(document.getElementById('ImagePopup'));
+        popup.show();
+    }
+</script>
