@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<h2 class="display-5">
+<h1 class="display-5">
     <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}{{ page.url }}">
         {{ page.title }}
     </a>
-</h2>
+</h1>
 <p>{{ page.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}/about">{{ page.author }}</a></p>
 <p>
     {% for category in page.categories %}
