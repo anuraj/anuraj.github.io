@@ -52,6 +52,7 @@ title: Contact
             event.preventDefault();
             event.stopPropagation();
         } else {
+            form.classList.add('was-validated');
             var name = document.getElementById('name').value;
             var email = document.getElementById('email').value;
             var message = document.getElementById('message').value;
@@ -74,15 +75,23 @@ title: Contact
                         alert.classList.add('alert-dismissible');
                         alert.classList.add('fade');
                         alert.classList.add('show');
+                        //add close button to the alert
+                        var button = document.createElement('button');
+                        button.classList.add('btn-close');
+                        button.setAttribute('type', 'button');
+                        button.setAttribute('data-bs-dismiss', 'alert');
+                        button.setAttribute('aria-label', 'Close');
+                        alert.appendChild(button);
                         alert.innerHTML = '<strong>Success!</strong> Your message has been sent successfully.';
                         var alertContainer = document.getElementById('contact-form');
                         alertContainer.appendChild(alert);
+                        //reset the form and make the control to initial state.
                         form.reset();
+                        form.classList.remove('was-validated');
                     }
                 }
             };
         }
-        form.classList.add('was-validated');
     }
 </script>
 
