@@ -1,4 +1,89 @@
 ---
-layout: default
+layout: page
 title: Contact
 ---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contact</h1>
+            <p class="lead">Please use the form below to contact me.</p>
+        </div>
+    </div>
+    <div class="row">
+        <form method="post" id="contact-form" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" name="email" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="email">Message</label>
+                <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary g-recaptcha"
+                    data-sitekey="6Lfi90EpAAAAAP1GeTj2yXt4HiAhKDIfJHjaZEVg" data-callback='onSubmit'
+                    data-action='submit'>Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% if jekyll.environment == "development" %}
+<script>
+    var apiEndpoint = "http://localhost:7156/api/Contact";
+</script>
+{% else %}
+<script>
+    var apiEndpoint = "https://anuraj-dev.azurewebsites.net/api/Contact";
+</script>
+{% endif %}
+
+
+<script>
+    function onSubmit(token) {
+        // document.getElementById("contact-form").submit();
+        var form = document.getElementById('contact-form');
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        } else {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            var data = {
+                "name": name,
+                "email": email,
+                "message": message,
+                "token": token
+            };
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", apiEndpoint, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify(data));
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        var alert = document.createElement('div');
+                        alert.classList.add('alert');
+                        alert.classList.add('alert-success');
+                        alert.classList.add('alert-dismissible');
+                        alert.classList.add('fade');
+                        alert.classList.add('show');
+                        alert.innerHTML = '<strong>Success!</strong> Your message has been sent successfully.';
+                        var alertContainer = document.getElementById('contact-form');
+                        alertContainer.appendChild(alert);
+                        form.reset();
+                    }
+                }
+            };
+        }
+        form.classList.add('was-validated');
+    }
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
