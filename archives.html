@@ -1,0 +1,26 @@
+---
+layout: page
+title: Archives
+permalink: /archives/
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Archives</h1>
+      <p class="lead">Please find all the blog posts.</p>
+    </div>
+  </div>
+  <div class="row">
+    {% for post in site.posts %}
+    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+    {% if month != nmonth %}
+    {% if forloop.index != 1 %}</ul>{% endif %}
+    <h3 id="{{ post.date | date:" %B%Y" }}">{{ post.date | date: '%B %Y' }}</h3>
+    <ul class="list-group list-group-flush">
+      {% endif %}
+      <li class="list-group-item"><a class="text-body-emphasis text-decoration-none" href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
