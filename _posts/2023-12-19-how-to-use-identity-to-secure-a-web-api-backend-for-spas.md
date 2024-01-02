@@ -11,11 +11,13 @@ image: /assets/images/2023/12/swagger_openapi.png
 
 This post is about how to use Identity to secure a Web API backend for SPAs such as Angular, React, and Vue apps. Unlike ASP.NET Core MVC, Web API projects doesn't support the `--auth Individual` option while creating the Web API project from dotnet SDK. We have to manually add the nuget package references. So first we need to create a web api project, we can do that using the following command - ` dotnet new webapi --name Weatherforecast.Api --output Weatherforecast`. Next we need to add reference of different NuGet packages. I am using Sql Server as the backend.
 
-{% highlight Shell %}
+{% highlight %}
 {% raw %}
+
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 dotnet add package Microsoft.EntityFrameworkCore.Design
+
 {% endraw %}
 {% endhighlight %}
 
