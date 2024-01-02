@@ -4,27 +4,26 @@ title: Blog
 paginate: true
 ---
 
-<ul class="list-group list-group-flush">
-    {% for post in paginator.posts %}
-    <li class="list-group-item">
-        <h2 class="display-5">
-            <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}{{ post.url }}">
-                {{ post.title }}
-            </a>
-        </h2>
-        <p>{{ post.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none"
-                href="{{ site.url }}/about">{{ post.author }}</a></p>
-        <p>
-            {% for category in post.categories %}
-            <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
-            {% endfor %}
-        </p>
-        <p class="lead">
-            {{ post.excerpt | markdownify | strip_html }}
-        </p>
-    </li>
-    {% endfor %}
-</ul>
+{% for post in paginator.posts %}
+<div class="row mb-3 border-bottom">
+    <h2 class="display-5">
+        <a class="text-body-emphasis text-decoration-none" href="{{ site.url }}{{ post.url }}">
+            {{ post.title }}
+        </a>
+    </h2>
+    <p>{{ post.date | date: '%B %d, %Y' }} by <a class="text-body-emphasis text-decoration-none"
+            href="{{ site.url }}/about">{{ post.author }}</a></p>
+    <p>
+        {% for category in post.categories %}
+        <span class="badge rounded-pill text-bg-secondary">{{ category }}</span>
+        {% endfor %}
+    </p>
+    <p class="lead">
+        {{ post.excerpt | markdownify | strip_html }}
+    </p>
+</div>
+{% endfor %}
+
 
 <nav>
     <ul class="pagination justify-content-center">
