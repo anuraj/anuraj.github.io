@@ -5,86 +5,25 @@ subtitle: Please use the form below to contact me.
 permalink: /contact/
 ---
 
-<form method="post" id="contact-form" class="needs-validation" novalidate>
+<form method="post" id="contact-form" class="needs-validation" action="https://formsubmit.co/anuraj.p@gmail.com">
     <div class="mb-3">
         <label class="form-label" for="name">Name</label>
-        <input class="form-control" type="text" name="name" id="name" required>
+        <input class="form-control" type="text" name="name" id="name" placeholder="Name" required>
     </div>
     <div class="mb-3">
         <label class="form-label" for="email">Email</label>
-        <input class="form-control" type="email" name="email" id="email" required>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
     </div>
     <div class="mb-3">
-        <label class="form-label" for="email">Message</label>
-        <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
     </div>
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary g-recaptcha"
-            data-sitekey="6Lfi90EpAAAAAP1GeTj2yXt4HiAhKDIfJHjaZEVg" data-callback='onSubmit'
-            data-action='submit'>Submit</button>
+        <button type="submit" class="btn btn-primary g-recaptcha">Submit</button>
     </div>
+    <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_subject" value="New submission!">
+    <input type="hidden" name="_next" value="https://anuraj.dev/thanks">
 </form>
-
-{% if jekyll.environment == "development" %}
-<script>
-    var apiEndpoint = "http://localhost:7156/api/Contact";
-</script>
-{% else %}
-<script>
-    var apiEndpoint = "https://anuraj-dev.azurewebsites.net/api/Contact";
-</script>
-{% endif %}
-
-
-<script>
-    function onSubmit(token) {
-        // document.getElementById("contact-form").submit();
-        var form = document.getElementById('contact-form');
-        if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-        } else {
-            form.classList.add('was-validated');
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            var data = {
-                "name": name,
-                "email": email,
-                "message": message,
-                "token": token
-            };
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", apiEndpoint, true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            xhr.send(JSON.stringify(data));
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        var alert = document.createElement('div');
-                        alert.classList.add('alert');
-                        alert.classList.add('alert-success');
-                        alert.classList.add('alert-dismissible');
-                        alert.classList.add('fade');
-                        alert.classList.add('show');
-                        //add close button to the alert
-                        var button = document.createElement('button');
-                        button.classList.add('btn-close');
-                        button.setAttribute('type', 'button');
-                        button.setAttribute('data-bs-dismiss', 'alert');
-                        button.setAttribute('aria-label', 'Close');
-                        alert.appendChild(button);
-                        alert.innerHTML = '<strong>Success!</strong> Your message has been sent successfully.';
-                        var alertContainer = document.getElementById('contact-form');
-                        alertContainer.appendChild(alert);
-                        //reset the form and make the control to initial state.
-                        form.reset();
-                        form.classList.remove('was-validated');
-                    }
-                }
-            };
-        }
-    }
-</script>
-
-<script src="https://www.google.com/recaptcha/api.js"></script>
