@@ -22,7 +22,7 @@ This command will install Bombardier in the machine. By running `bombardier --he
 
 Next we can create a simple Web API application using `dotnet new webapi --name WeatherForecastApi --output WeatherForecastApi\Src`, next move to the Src directory and run the `dotnet run` command, which will start the API application. Next we can run the following command `bombardier -c 8 -n 100000 -m GET http://localhost:5087/weatherforecast` - this command will to send 100,000 requests with 8 connections to your API to see how it handles them.
 
-![Bombardier running]({{ site.url }}/assets/images/2024/01/bombardier_running.png)
+![Bombardier running]({{ site.url }}/assets/images/2024/02/bombardier_running.png)
 
 The numbers Bombardier gives you might look confusing, but they're like clues about how your API is doing:
 
