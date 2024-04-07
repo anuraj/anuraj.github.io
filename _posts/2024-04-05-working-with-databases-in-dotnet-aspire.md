@@ -57,7 +57,7 @@ var app = builder.Build();
 {% endraw %}
 {% endhighlight %}
 
-The`AddMongoDBClient()` method will inject `IMongoClient` interface which we can use it in the controller classes or Minimal API action methods. And we can use `IMongoClient` interface to interact with Mongo database. Here is the code which will insert the weatherforecasts to database.
+The `AddMongoDBClient()` method will inject `IMongoClient` interface which we can use it in the controller classes or Minimal API action methods. And we can use `IMongoClient` interface to interact with Mongo database. Here is the code which will insert the weatherforecasts to database.
 
 {% highlight CSharp %}
 {% raw %}
@@ -85,11 +85,11 @@ app.MapGet("/weatherforecast", async (IMongoClient mongoClient) =>
 
 Now we are ready to run the application. If we are not running Docker we will get an error like this.
 
-![Docker not running - Error]({{ site.url }}/assets/images/2024/03/mongo_db_docker_not_running.png)
+![Docker not running - Error]({{ site.url }}/assets/images/2024/04/mongo_db_docker_not_running.png)
 
 Run the Docker desktop to fix the issue and run the application again. Then we can browse the Aspire Dashboard.
 
-![Aspire Dashboard with Mongo]({{ site.url }}/assets/images/2024/03/aspire_dashboard.png)
+![Aspire Dashboard with Mongo]({{ site.url }}/assets/images/2024/04/aspire_dashboard.png)
 
 In the dashboard we can see the Mongo service. If we notice, it is not exposing any ports. To access the database and view the collections we need configure any Mongo Database explorer tools. Aspire comes with `MongoExpress`, we can modify the Aspire host like this.
 
@@ -119,11 +119,11 @@ builder.Build().Run();
 
 Now run the application again and we will be able to see Mongo Express container running as well.
 
-![Aspire Dashboard with Mongo Express]({{ site.url }}/assets/images/2024/03/aspire_dashboard_with_mongo_express.png)
+![Aspire Dashboard with Mongo Express]({{ site.url }}/assets/images/2024/04/aspire_dashboard_with_mongo_express.png)
 
 We can click on the Web Application to run the Angular application which will insert the Weather forecast array to the Mongo database. Then we can click on the Mongo Express URL which will open Mongo Express console and we can check the Mongo database, collections and values.
 
-![Mongo Express running on Aspire]({{ site.url }}/assets/images/2024/03/mongo_express_aspire.png)
+![Mongo Express running on Aspire]({{ site.url }}/assets/images/2024/04/mongo_express_aspire.png)
 
 The application will reset the Mongo databases every time when we run the application every time. To fix the issue, we need to configure docker volume. We can configure it using `WithVolume` option. Here is the updated code.
 
