@@ -6,7 +6,7 @@ date: 2024-03-22 00:00:00
 categories: [AspNetCore,Aspire,CloudNative,Angular]
 tags: [AspNetCore,Aspire,CloudNative,Angular]
 author: "Anuraj"
-image: /assets/images/2024/02/aspire_angular_app_env_url.png
+image: /assets/images/2024/03/aspire_angular_app_env_url.png
 ---
 
 In this blog post, we'll explore how we can work with Angular applications with .NET Aspire. We can install .NET Aspire using the `dotnet workload install aspire` command. Next we can create the .NET Aspire application using the following command - `dotnet new aspire --name Weatherforecast --output Src`. This command will create two projects - `Weatherforecast.AppHost` and `Weatherforecast.ServiceDefaults`. Next we can add the API application, for creating the API application, we can create ASP.NET Core Minimal API, with the command `dotnet new webapi --name Weatherforecast.Api --output Src\Weatherforecast.Api`. We may need to modify the solution file and add the API application with the command - `dotnet sln add .\Weatherforecast.Api\`, otherwise it may not load in VS Code.
