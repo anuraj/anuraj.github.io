@@ -6,7 +6,7 @@ date: 2024-06-23 00:00:00
 categories: [AspNetCore,DotNet]
 tags: [AspNetCore,DotNet]
 author: "Anuraj"
-image: /assets/images/2024/06/new_web_api_project.png
+image: /assets/images/2024/06/swagger_authorize_ui.png
 ---
 
 In this blog post, we'll learn how to implement API Key Authentication in ASP.NET Core. When exposing API endpoints to other developers or consumers it is a best practice to implement authentication system. Api Key authentication is very easy to implement and configure. In this approach, developers need to provide the API Key along with the request details.
