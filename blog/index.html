@@ -31,12 +31,12 @@ paginate: true
         {% if paginator.previous_page %}
         <li class="page-item">
             <a class="text-body-emphasis text-decoration-none page-link" href="{{ paginator.previous_page_path }}">
-                Previous
+                &#8249;&nbsp;Previous
             </a>
         </li>
         {% else %}
         <li class="page-item disabled">
-            <a class="page-link">Previous</a>
+            <a class="page-link">&#8249;&nbsp;Previous</a>
         </li>
         {% endif %}
         <li class="page-item">
@@ -45,11 +45,11 @@ paginate: true
         </li>
         {% if paginator.next_page %}
         <li class="page-item">
-            <a class="text-body-emphasis text-decoration-none page-link" href="{{ paginator.next_page_path }}">Next</a>
+            <a class="text-body-emphasis text-decoration-none page-link" href="{{ paginator.next_page_path }}">Next&nbsp;&#8250;</a>
         </li>
         {% else %}
         <li class="page-item disabled">
-            <a class="page-link">Next</a>
+            <a class="page-link">Next&nbsp;&#8250;</a>
         </li>
         {% endif %}
     </ul>
