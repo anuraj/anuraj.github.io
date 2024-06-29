@@ -170,6 +170,10 @@ Now if we run the application, in the swagger UI we will be able to see a dropdo
 
 ![Swagger UI]({{ site.url }}/assets/images/2024/06/swagger_ui.png)
 
+And in each endpoint we will get option to send version value, like this.
+
+![Swagger UI Version]({{ site.url }}/assets/images/2024/06/swagger_ui_version.png)
+
 In the above code snippet, we are hard coding the versions and OpenApiInfo objects. Instead of hard coding this we can implement `IConfigureOptions<SwaggerGenOptions>` - which will enumerate the `ApiVersionDescription` and configure the `SwaggerDoc` dynamically like this.
 
 {% highlight CSharp %}
