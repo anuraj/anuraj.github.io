@@ -41,6 +41,8 @@ We can work with the phi3 model by running it using `ollama run phi3` command. H
 
 ![Ollama - Asking the question]({{ site.url }}/assets/images/2024/07/ollama_running_asking_question.png)
 
+Once the command completes, we can say the command `/bye` command to exit from the phi3 model and `exit` command to exit from the bash terminal.
+
 This way we can work with LLMs locally using Ollama and Docker. In the next few posts we will explore how to install the Web UI component for Ollama and how to connect to phi3 model from ASP.NET Core web application. Explore it and let me know if you have any questions / feedback.
 
 Happy Programming
