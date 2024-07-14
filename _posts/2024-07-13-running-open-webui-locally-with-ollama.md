@@ -73,7 +73,7 @@ Now we can run `docker compose up --build` command which will run both ollama an
 
 ### Downloading Phi3 models as part of docker compose process
 
-To customize the model download process we need an external shell file. Here is an example one.
+To customize the model download process we need an external shell file. Here is the `entrypoint.sh` shell script file.
 
 {% highlight Shell %}
 {% raw %}
@@ -135,6 +135,8 @@ volumes:
 
 {% endraw %}
 {% endhighlight %}
+
+In this Docker compose file, I am mounting the `entrypoint.sh` to the docker container and I am setting it as the entrypoint, so when the container is running, it will execute the `entrypoint.sh` file instead of running `ollama serve` command.
 
 This way we can work with LLMs locally using Ollama with Open Web UI in Docker. We can run a local version of chatgpt with an implementation like this. In the next post we will explore how to connect to phi3 model from ASP.NET Core web application. Explore it and let me know if you have any questions / feedback.
 
