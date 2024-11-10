@@ -30,7 +30,7 @@ app.UseMiniProfiler();
 ```
 Now we configured the profiling for our app. We can run the application and browse the `/mini-profiler-resources/results-index` endpoint and view the execution details, like this.
 
-![Mini Profiler running]({{ site.url }}/assets/images/2024/10/miniprofiler_running.png)
+![Mini Profiler running]({{ site.url }}/assets/images/2024/11/miniprofiler_running.png)
 
 Currently it is displaying the swagger request details, since it is not part of the application logic we can exclude it by modifying the `AddMiniProfiler()` code.
 
@@ -53,7 +53,7 @@ builder.Services.AddMiniProfiler(options =>
 
 Now if we run the application again and browse the endpoint we won't see the swagger related requests. And we can execute some API endpoint and view the in depth details about the request and response. Here is the screenshot of the GetAllToDoItems request.
 
-![Mini Profiler - Details]({{ site.url }}/assets/images/2024/10/miniprofiler_running_details.png)
+![Mini Profiler - Details]({{ site.url }}/assets/images/2024/11/miniprofiler_running_details.png)
 
 This way we can use MiniProfiler to profile ASP.NET Core Minimal APIs. While deploying production we may have to protect the MiniProfiler endpoints. We can configure this again using the `AddMiniProfiler` code.
 
