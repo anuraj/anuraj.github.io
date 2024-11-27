@@ -12,7 +12,7 @@ In this blog post, we'll learn mock HttpClient in unit tests. Recently I started
 
 Since the HttpClient does not inherit from any interface so we will have to write our own. We can implement a custom `IHttpHandler` interface like this.
 
-```
+```csharp
 public interface IHttpHandler
 {
     Task<HttpResponseMessage> PostAsJsonAsync<TValue>(string? requestUri, TValue value, CancellationToken cancellationToken);
@@ -22,7 +22,7 @@ public interface IHttpHandler
 
 And we can implement it like this.
 
-```
+```csharp
 public class HttpHandler : IHttpHandler
 {
     private readonly HttpClient _httpClient = new();
@@ -38,7 +38,7 @@ And we can use this in the library - instead of using HttpClient directly.
 
 In my case, I am using Moq so I used different approach - where I am able to Mock the httpClient, here is an example.
 
-```
+```csharp
 var mockHandler = new Mock<HttpMessageHandler>(MockBehavior.Strict);
 
 mockHandler.Protected().Setup<Task<HttpResponseMessage>>("SendAsync", ItExpr.IsAny<HttpRequestMessage>(), ItExpr.IsAny<CancellationToken>())
