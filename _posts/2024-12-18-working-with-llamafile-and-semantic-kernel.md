@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Working with llamafile and Semantic Kernel"
-subtitle: "In this blog post, we'll how to work with llamafile and Semantic Kernel"
+subtitle: "In this blog post, we'll learn how to work with llamafile and Semantic Kernel"
 date: 2024-12-18 00:00:00
 categories: [dotnet,AI]
 tags: [dotnet,AI]
