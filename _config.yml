@@ -18,7 +18,7 @@ paginate_path: "/blog/:num/"
 page_excerpts: true
 logo: /assets/logo.png
 feed:
-  posts_limit: 5
+  posts_limit: 15
   excerpt_only: true
   path: /blog/feed.rss
 github: [metadata]
