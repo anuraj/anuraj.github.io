@@ -278,6 +278,6 @@ collection.AddLogging(services => services.AddConsole()
 
 This way we can build a simple copilot for your applications using Semantic Kernel. By configuring various plugins it will help users to avoid find things easily and will be able to improve the user experience.
 
-Source code available here - 
+Source code available here - [GitHub](https://github.com/anuraj/HelloWorldCopilot)
 
 Happy Programming
