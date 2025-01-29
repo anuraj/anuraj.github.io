@@ -6,6 +6,7 @@ date: 2025-01-25 00:00:00
 categories: [dotnet,AI]
 tags: [dotnet,AI]
 author: "Anuraj"
+image: /assets/images/2025/01/copilot_with_plugins.png
 ---
 
 In this blog post, we'll learn how to build your own copilot with Semantic Kernel and C#. Today I had to take a session on this topic on K-MUG. For this demo I am using a Console Application, but we can use any type of .NET application windows or web. A copilot is a special type of agent that is meant to work side-by-side with a user. In this blog post I am using GPT 4o model from GitHub Models. 
