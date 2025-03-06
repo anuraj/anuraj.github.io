@@ -6,12 +6,11 @@ date: 2025-02-28 00:00:00
 categories: [dotnet,AI,RAG,SemanticKernel]
 tags: [dotnet,AI,RAG,SemanticKernel]
 author: "Anuraj"
-image: /assets/images/2025/01/deepseek_r1_page.png
 ---
 
 In this blog post, we'll learn how to chat with your data - building a Semantic Kernel powered RAG application. In this blog post I will be extending the copilot application with custom data. First I will be asking a question about ICC champions trophy 2025 - Since it is not part of knowledge - it will respond something like this.
 
-![Copilot without Data]({{ site.url }}/assets/images/2025/01/copilot_without_data.png)
+![Copilot without Data]({{ site.url }}/assets/images/2025/02/copilot_without_data.png)
 
 To resolve this, we will be adding data to a memory store and searching the data in the store - if there any result we will be sending the data along with the question to the LLM. To store the data in memory store we need help of embedding model. An embedding model is used to convert text (or other data types like images and audio) into numerical vector representations in a high-dimensional space. These vector embeddings capture semantic meaning, allowing for efficient similarity searches and machine learning applications. For this demo I will be using Ollama with `mistral` as the main LLM and `nomic-embed-text` as the embedding model.
 
@@ -83,7 +82,7 @@ if (builder.Length != 0)
 
 And after searching I am adding the details to the string builder and adding it to the chatHistory. And here is the screenshot of the application with data.
 
-![Copilot with Data]({{ site.url }}/assets/images/2025/01/copilot_with_data.png)
+![Copilot with Data]({{ site.url }}/assets/images/2025/02/copilot_with_data.png)
 
 This way we can configure custom data and chat with it using Semantic Kernel.
 
