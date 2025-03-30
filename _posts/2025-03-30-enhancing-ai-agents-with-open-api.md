@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Empowering AI Agents with Tools - Open API"
+title: "Enhancing AI Agents with Open API Integrations"
 subtitle: "In this blog post, we'll learn how to empower the AI agents with Tools. We will learn how to use Open API specification as a tool."
 date: 2025-03-30 00:00:30
 categories: [dotnet,AI,SemanticKernel]
