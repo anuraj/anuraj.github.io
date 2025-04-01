@@ -2,12 +2,16 @@
 layout: default
 title: Home Page
 ---
+{% assign start_year = "2003-01-01" | date: "%Y" | plus: 0 %}
+{% assign current_year = "now" | date: "%Y" | plus: 0 %}
+{% assign year_difference = current_year | minus: start_year %}
+
 <div class="row">
     <div class="col-md-12 border-bottom">
         <h1 class="display-4">Hi, I am Anuraj</h1>
         <p class="lead pb-3 lh-lg">
             <img src="/assets/me.png" class="img-fluid float-end ms-4 mb-3 rounded-circle" alt="Anuraj Profile" />
-            With a rich background spanning 18 years, I am an architect specializing in Microsoft
+            With a rich background spanning {{ year_difference }} years, I am an architect specializing in Microsoft
             technologies. Holding the esteemed title of Microsoft MVP and being a certified Azure Developer, I actively
             contribute to the community as a frequent speaker at Microsoft User Group meetings and conferences.
         </p>
