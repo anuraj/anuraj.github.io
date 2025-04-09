@@ -6,7 +6,7 @@ date: 2025-04-07 00:00:00
 categories: [dotnet,webapi]
 tags: [dotnet,webapi]
 author: "Anuraj"
-image: /assets/images/2025/03/bitly_mcp_server_running.png
+image: /assets/images/2025/04/scalar_ui_running.png
 ---
 
 n this blog post, we’ll explore how to document your ASP.NET Core Web API using Scalar. In March 2024, the ASP.NET Core team announced the removal of the Swashbuckle.AspNetCore dependency from web templates starting with .NET 9 – [GitHub Issue](https://github.com/dotnet/aspnetcore/issues/54599). As a replacement, Microsoft introduced a new package, Microsoft.AspNetCore.OpenApi, which provides built-in OpenAPI document generation similar to Swagger. However, it currently lacks a bundled UI. While you can still use Swagger UI, it's no longer included in the templates by default. In this post, we'll use Scalar as an alternative UI. Scalar offers a modern, visually appealing interface that makes it easy for developers to navigate and test APIs efficiently.

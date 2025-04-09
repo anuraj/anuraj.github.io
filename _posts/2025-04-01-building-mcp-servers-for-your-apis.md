@@ -6,7 +6,7 @@ date: 2025-04-01 00:00:30
 categories: [dotnet,AI,MCP]
 tags: [dotnet,AI,MCP]
 author: "Anuraj"
-image: /assets/images/2025/03/bitly_mcp_server_running.png
+image: /assets/images/2025/04/bitly_mcp_server_running.png
 ---
 
 In this blog post, we'll learn how to implement MCP servers for your APIs with .NET and C#. In my last blog post, I briefly mentioned about MCP -  MCP is like a special rule book that helps AI programs understand information better. Imagine it like a USB-C port on your tablet or laptop. Just like USB-C lets you plug in chargers, headphones, or other devices easily, MCP helps AI connect to different sources of information in a simple and organized way. Learn more about MCP [here](https://modelcontextprotocol.io/introduction). With partnership with Anthropic Team, Microsoft is building a C# SDK for MCP - Official blog post available [here](https://devblogs.microsoft.com/blog/microsoft-partners-with-anthropic-to-create-official-c-sdk-for-model-context-protocol?WT.mc_id=DT-MVP-5002040). We will be using this SDK to build the MCP server.
