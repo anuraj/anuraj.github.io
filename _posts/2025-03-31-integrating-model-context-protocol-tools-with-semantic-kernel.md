@@ -37,6 +37,7 @@ await using var everythingsClient = await McpClientFactory.CreateAsync
 Next we can get the tools and enumerate the name and description.
 
 ```csharp
+var tools = await everythingsClient.ListTools();
 Console.WriteLine($"Found {tools.Count} tools");
 foreach (var tool in tools)
 {
