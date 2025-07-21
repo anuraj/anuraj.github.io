@@ -61,41 +61,14 @@ layout: default
 
 {% include footer.html %}
 
-<div class="modal fade" id="ImagePopup" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="PopupTitle"></h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <img id="PopupImage" class="img-fluid" />
-            </div>
-        </div>
-    </div>
-</div>
-
 <script>
     var images = document.getElementsByTagName("img");
     for (var i = 0; i < images.length; i++) {
         var el = images[i];
         if (!el.getAttribute("class")) {
             el.setAttribute("class", "img-fluid mx-auto d-block");
-            el.style.cursor = "pointer";
             el.setAttribute("alt", el.alt);
-            el.setAttribute("onclick", "ShowImage(this)");
         }
-    }
-
-    function ShowImage(el) {
-        var title = el.getAttribute("alt");
-        var src = el.getAttribute("src");
-        var popupTitle = document.getElementById("PopupTitle");
-        popupTitle.innerHTML = title;
-        var popupImage = document.getElementById("PopupImage");
-        popupImage.setAttribute("src", src);
-        var popup = new bootstrap.Modal(document.getElementById('ImagePopup'));
-        popup.show();
     }
 
     function GotoTop() {
