@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building your first MCP Server in .NET and C#"
+title: "Build your first MCP Server in .NET and C#"
 subtitle: "In this blog post, we'll explore how to build your first MCP server in .NET and C#"
 date: 2025-07-20 00:00:00
 categories: [dotnet,ai,mcp,csharp]
