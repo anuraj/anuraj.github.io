@@ -1,4 +1,4 @@
 <script>
     const getStoredTheme=()=>localStorage.getItem("theme"),setStoredTheme=e=>localStorage.setItem("theme",e),getPreferredTheme=()=>{let e=getStoredTheme();return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")},setTheme=e=>{"auto"===e&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.setAttribute("data-bs-theme","dark"):document.documentElement.setAttribute("data-bs-theme",e)};setTheme(getPreferredTheme()),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{let e=getStoredTheme();"light"!==e&&"dark"!==e&&setTheme(getPreferredTheme())}),document.querySelector("#ToggleTheme").addEventListener("click",()=>{let e=getStoredTheme();"light"===e?(setStoredTheme("dark"),setTheme("dark")):(setStoredTheme("light"),setTheme("light"))});
 </script>
-<!-- <script src="https://collectly.in/scripts/B6C8D8BC5FA543279D79CCF093480327/script.min.js" async defer></script> -->
+<script src="https://collectly.in/scripts/B6C8D8BC5FA543279D79CCF093480327/script.min.js" async defer></script>
