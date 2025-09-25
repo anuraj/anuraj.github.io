@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Working with Docker model running from .NET"
+title: "Working with Docker model Runner from .NET"
 subtitle: "In this blog post, we'll explore how to enable model runner in Docker and interact with it from dotnet applications."
 date: 2025-09-18 00:00:00
 categories: [dotnet,csharp,docker,AI]
