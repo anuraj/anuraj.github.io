@@ -2,7 +2,7 @@
 layout: post
 title: "Passing images to LLMs in C# with Microsoft.Extensions.AI"
 subtitle: "In this blog post, we'll explore how to send images to LLMs for analysis in C# with Microsoft.Extensions.AI"
-date: 2025-09-18 00:00:00
+date: 2025-09-22 00:00:00
 categories: [dotnet,csharp,AI]
 tags: [dotnet,csharp,AI]
 author: "Anuraj"
