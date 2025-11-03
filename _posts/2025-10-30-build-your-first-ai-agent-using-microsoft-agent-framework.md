@@ -23,7 +23,7 @@ dotnet add package Microsoft.Agents.AI --prerelease
 
 Next we will keep all the configuration keys using `dotnet user secrets` tool. For this demo, I will be using five values. Once the secrets configured, we will start modifying the code to build AI Agent and associate tool to it.
 
-```
+```csharp
 var endpoint = builder.Configuration["AzureOpenAI:Endpoint"] ?? 
     throw new InvalidOperationException("AzureOpenAI:Endpoint is not configured");
 var deployment = builder.Configuration["AzureOpenAI:Deployment"] ?? 
@@ -57,7 +57,7 @@ In the above code, first I will be reading the secrets, next I am setting the in
 
 Here is the implementation of `SearchTools` class.
 
-```
+```csharp
 public sealed class SearchTools
 {
     private readonly IHttpClientFactory _httpClientFactory;
@@ -88,7 +88,7 @@ This is simple and straight forward implementation - where I am searching for a 
 
 Here is the API endpoint which invokes the Agent.
 
-```
+```csharp
 app.MapGet("/generate", async ([FromQuery] string company, [FromServices] ChatClientAgent agent,
     CancellationToken cancellationToken) =>
 {
