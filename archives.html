@@ -5,14 +5,38 @@ subtitle: Please find all the blog posts.
 permalink: /archives/
 ---
 
+{% assign current_month = "" %}
+{% assign count = 0 %}
+
 {% for post in site.posts %}
-{% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-{% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-{% if month != nmonth %}
-{% if forloop.index != 1 %}</ul>{% endif %}
-<h3 id="{{ post.date | date:" %B%Y" }}">{{ post.date | date: '%B %Y' }}</h3>
-<ul class="list-group list-group-flush">
+  {% capture post_month %}{{ post.date | date: '%B %Y' }}{% endcapture %}
+  {% capture post_month_key %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+
+  {% if post_month_key != current_month %}
+    {% if current_month != "" %}
+      </ul>
+    {% endif %}
+
+    {%- comment -%}
+      Count how many posts belong to this month
+    {%- endcomment -%}
+    {% assign count = 0 %}
+    {% for inner_post in site.posts %}
+      {% capture inner_month_key %}{{ inner_post.date | date: '%m%Y' }}{% endcapture %}
+      {% if inner_month_key == post_month_key %}
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    <h3 id="{{ post_month | slugify }}">{{ post_month }} ({{ count }} post{% if count > 1 %}s{% endif %})</h3>
+    <ul class="list-group list-group-flush">
+
+    {% assign current_month = post_month_key %}
   {% endif %}
-  <li class="list-group-item"><a class="text-body-emphasis text-decoration-none" href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+
+  <li class="list-group-item">
+    <a class="text-body-emphasis text-decoration-none" href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+
+{% endfor %}
 </ul>
