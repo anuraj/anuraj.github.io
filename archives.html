@@ -29,12 +29,12 @@ permalink: /archives/
     {% endfor %}
 
     <h3 id="{{ post_month | slugify }}">{{ post_month }} ({{ count }} post{% if count > 1 %}s{% endif %})</h3>
-    <ul class="list-group">
+    <ul>
 
     {% assign current_month = post_month_key %}
   {% endif %}
 
-  <li class="list-group-item">
+  <li>
     <a class="text-body-emphasis text-decoration-none" href="{{ post.url }}">{{ post.title }}</a>
   </li>
 
