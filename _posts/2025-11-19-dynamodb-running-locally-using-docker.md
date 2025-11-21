@@ -2,7 +2,7 @@
 layout: post
 title: "Running AWS DynamoDb locally using docker"
 subtitle: "DynamoDb from AWS is a major player in the cloud NoSQL database market. It can scale globally and is blazing fast when used appropriately. In this blog post we will learn how to run it locally using Docker."
-date: 2025-11-18 00:00:00
+date: 2025-11-19 00:00:00
 categories: [AWS,Docker,DynamoDb]
 tags: [AWS,Docker,DynamoDb]
 author: "Anuraj"
