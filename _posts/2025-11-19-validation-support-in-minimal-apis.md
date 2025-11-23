@@ -6,6 +6,7 @@ date: 2025-11-19 08:00:00
 categories: [AspNetCore,DotNet]
 tags: [AspNetCore,DotNet]
 author: "Anuraj"
+image: /assets/images/2025/11/minimal_api_validation3.png
 ---
 
 In .NET 10, ASP.NET Core team introduced validation support with Data Annotations validation attributes. In this blog post we will learn how to enable this and how to use custom validation. For ASP.NET Core, we just need to use the validation attributes, it will automatically enable the validation for the model properties. But in ASP.NET Core Minimal APIs, we need to add the validation services to the IServiceCollection - `builder.Services`.
