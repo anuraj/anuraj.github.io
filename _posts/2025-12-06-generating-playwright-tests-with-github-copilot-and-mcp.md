@@ -2,7 +2,7 @@
 layout: post
 title: "Generating Playwright Tests with GitHub Copilot and Playwright MCP server"
 subtitle: "In this blog post, we will explore how to generate Playwright Tests with GitHub Copilot and Playwright MCP server."
-date: 2025-12-05 00:00:00
+date: 2025-12-06 00:00:00
 categories: [Playwright,MCP,GitHub,Copilot]
 tags: [Playwright,MCP,GitHub,Copilot]
 author: "Anuraj"
