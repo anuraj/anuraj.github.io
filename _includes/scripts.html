@@ -1,7 +1,5 @@
 <script>
     const getStoredTheme=()=>localStorage.getItem("theme"),setStoredTheme=e=>localStorage.setItem("theme",e),getPreferredTheme=()=>{let e=getStoredTheme();return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")},setTheme=e=>{"auto"===e&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.setAttribute("data-bs-theme","dark"):document.documentElement.setAttribute("data-bs-theme",e)};setTheme(getPreferredTheme()),window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",()=>{let e=getStoredTheme();"light"!==e&&"dark"!==e&&setTheme(getPreferredTheme())}),document.querySelector("#ToggleTheme").addEventListener("click",()=>{let e=getStoredTheme();"light"===e?(setStoredTheme("dark"),setTheme("dark")):(setStoredTheme("light"),setTheme("light"))});
-
-    //Update the theme attribute of script tag with src="https://utteranc.es/client.js" based on current theme
     document.addEventListener("DOMContentLoaded", function() {
         const utterancesScript = document.querySelector('script[src="https://utteranc.es/client.js"]');
         if (utterancesScript) {
