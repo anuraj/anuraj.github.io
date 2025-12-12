@@ -72,7 +72,7 @@ services.AddDbContext<VectorDataAIDbContext>(options =>
 });
 ```
 
-Now we can seed the database. For seeding the database we need any embedding supported LLM. For this blog post, I am using Ollama. So I need to add `OllamaSharp` package. This data I took from [Build a .NET AI vector search app](https://learn.microsoft.com/en-us/dotnet/ai/quickstarts/build-vector-search-app?pivots=azure-openai&WT.mc_id=DT-MVP-5002040)
+Now we can seed the database. For seeding the database we need any embedding supported LLM. For this blog post, I am using Ollama. So I need to add `OllamaSharp` package.
 
 ```csharp
 
@@ -84,29 +84,10 @@ var provider = services.BuildServiceProvider();
 List<CloudService> cloudServices =
 [
     new() {
-            Name = "Azure App Service",
-            Description = "Host .NET, Java, Node.js, and Python web applications and APIs in a fully managed Azure service. You only need to deploy your code to Azure. Azure takes care of all the infrastructure management like high availability, load balancing, and autoscaling."
+        Name = "Azure App Service",
+        Description = "Host .NET, Java, Node.js, and Python web applications and APIs in a fully managed Azure service. You only need to deploy your code to Azure. Azure takes care of all the infrastructure management like high availability, load balancing, and autoscaling."
     },
-    new() {
-            Name = "Azure Service Bus",
-            Description = "A fully managed enterprise message broker supporting both point to point and publish-subscribe integrations. It's ideal for building decoupled applications, queue-based load leveling, or facilitating communication between microservices."
-    },
-    new() {
-            Name = "Azure Blob Storage",
-            Description = "Azure Blob Storage allows your applications to store and retrieve files in the cloud. Azure Storage is highly scalable to store massive amounts of data and data is stored redundantly to ensure high availability."
-    },
-    new() {
-            Name = "Microsoft Entra ID",
-            Description = "Manage user identities and control access to your apps, data, and resources."
-    },
-    new() {
-            Name = "Azure Key Vault",
-            Description = "Store and access application secrets like connection strings and API keys in an encrypted vault with restricted access to make sure your secrets and your application aren't compromised."
-    },
-    new() {
-            Name = "Azure AI Search",
-            Description = "Information retrieval at scale for traditional and conversational search applications, with security and options for AI enrichment and vectorization."
-    }
+    //Other Azure Services with Name and Description.
 ];
 
 var dbContext = provider.GetRequiredService<VectorDataAIDbContext>();
