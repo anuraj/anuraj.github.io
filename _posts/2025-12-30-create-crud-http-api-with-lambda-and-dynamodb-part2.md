@@ -6,7 +6,7 @@ date: 2025-12-30 00:00:00
 categories: [AWS,Lambda,DynamoDb]
 tags: [AWS,Lambda,DynamoDb]
 author: "Anuraj"
-image: /assets/images/2025/12/aws_lambda_tool.png
+image: /assets/images/2025/12/aws_lambda_tool_post.png
 ---
 
 In this blog post series, we'll explore how to create a CRUD application using Http API with Lambda and DynamoDB. This is multipart blog post. In this blog post we will connect to DynamoDb from AWS Lambda.
