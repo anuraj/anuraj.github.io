@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create a CRUD HTTP API with Lambda and DynamoDB - Part 1"
+title: "How to create an AWS Lambda function and debug it"
 subtitle: "In this blog post series, we'll explore how to create a CRUD application using Http API with Lambda and DynamoDB. This is multipart blog post. In this blog post we will create a lambda, how to test and debug it."
 date: 2025-12-29 00:00:00
 categories: [AWS,Lambda]

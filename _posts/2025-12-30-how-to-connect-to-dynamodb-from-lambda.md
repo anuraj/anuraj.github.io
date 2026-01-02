@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Create a CRUD HTTP API with Lambda and DynamoDB - Part 2"
+title: "How to connect to AWS DynamoDB from AWS Lambda"
 subtitle: "In this blog post series, we'll explore how to create a CRUD application using Http API with Lambda and DynamoDB. This is multipart blog post. In this blog post we will connect to DynamoDb from AWS Lambda."
 date: 2025-12-30 00:00:00
 categories: [AWS,Lambda,DynamoDb]
