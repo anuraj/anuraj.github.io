@@ -13,7 +13,7 @@ In this blog post we will learn how to get started with AWS CDK in C#. The AWS C
 
 In the current project I am creating a folder with the name `Infrastructure`, then I am running the command `cdk init app --language csharp` - this will create a blank project for CDK development with C#. It will create a `cdk.json` which helps the CDK Toolkit how to execute your app. Here is the directory structure of the project created by the command.
 
-![CDK File structure]({{ site.url }}/assets/images/2025/01/cdk_file_structure.png)
+![CDK File structure]({{ site.url }}/assets/images/2026/01/cdk_file_structure.png)
 
 Before getting into the code, here are the main concepts of AWS CDK.
 
@@ -79,7 +79,7 @@ todoItemsTable.GrantReadWriteData(todoApiLambda);
 
 We can deploy this to AWS by running the command `cdk bootstrap` and then `cdk deploy`. The `cdk bootstrap` command prepares our AWS environment for deploying CDK applications. It will be creating a AWS S3 bucket and resources, and copy the resources required to deploy the application. Once the `cdk bootstrap` command executed, next we can run the `cdk deploy` command, which will deploy the resources to AWS.
 
-![CDK Deploy command]({{ site.url }}/assets/images/2025/01/cdk_deploy_command.png)
+![CDK Deploy command]({{ site.url }}/assets/images/2026/01/cdk_deploy_command.png)
 
 Since I am deploying the resources to AWS, I need to give explicit permission to deploy resources. We will be able to see the deployment in AWS Console under CloudFormations.
 
