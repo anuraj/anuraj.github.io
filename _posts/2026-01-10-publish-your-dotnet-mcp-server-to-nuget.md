@@ -79,7 +79,18 @@ We need to provide the environment variables - which is required for the MCP ser
 </PropertyGroup>
 ```
 
-That is all you need to do to pack and publish your .NET tool as an MCP Server on NuGet.org!
+And if the `server.json` added we need to add the following code in the project file as well. It include the Readme file reference as well.
+
+```xml
+<ItemGroup>
+  <None Include="README.md" Pack="true" PackagePath="/" />
+  <None Include=".mcp/server.json" Pack="true" PackagePath="/.mcp/" />
+</ItemGroup>
+```
+
+Otherwise nuget.org may not display the VS Code configuration and the package readme.
+
+That is all we need to do pack and publish your .NET MCP Server to NuGet.org!
 
 Now we can run the command `dotnet pack -c Release`- which will build and package the executable to nuget package. And to deploy to the nuget.org, we can execute the command `dotnet nuget push bin/Release/*.nupkg --api-key NUGET_APIKEY --source https://api.nuget.org/v3/index.json`.
 
