@@ -32,7 +32,7 @@ var bot = new TelegramBotClient(token!, cancellationToken: cts.Token);
 
 bot.OnMessage += OnMessage;
 
-Console.WriteLine($"@{me.Username} is running... Press Enter to terminate");
+Console.WriteLine($"Bot is running... Press Enter to terminate");
 Console.ReadLine();
 cts.Cancel();
 
