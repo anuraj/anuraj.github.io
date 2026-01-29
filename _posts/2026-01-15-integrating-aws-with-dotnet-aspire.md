@@ -2,7 +2,7 @@
 layout: post
 title: "Integrating AWS with .NET Aspire"
 subtitle: "In this blog post we will learn how to integrate AWS with .NET Aspire."
-date: 2026-01-12 00:00:00
+date: 2026-01-15 00:00:00
 categories: [dotnet,aws,aspire,cloudnative]
 tags: [dotnet,aws,aspire,cloudnative]
 author: "Anuraj"
