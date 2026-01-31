@@ -402,7 +402,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 ```
 
-I uploaded the source code here - [https://github.com/anuraj/image-compressor](https://github.com/anuraj/image-compressor)
+I uploaded the source code here - [https://github.com/anuraj/image-compressor](https://github.com/anuraj/image-compressor) - This implementation is little different from the source code. Now it is optimized to use compress only the changed files, instead of compressing all the files.
 
 Building a custom GitHub Action in C# gives you complete control over your image optimization pipeline while leveraging the power and familiarity of the .NET ecosystem. This solution has been running smoothly on my Jekyll blog, automatically optimizing images and improving page load times.
 
