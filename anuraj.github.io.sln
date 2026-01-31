@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9C6578E7-E4FE-79BB-1635-F363CC1E80DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{9477DE2C-DCDB-AB18-FFD0-CF277DC86577}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "image-compressor", "image-compressor", "{667D5633-2D73-959C-77E6-DC32A7056A85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F3B1DE0-C45C-7002-F79C-AFB33722761D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageCompressor", ".github\actions\image-compressor\src\ImageCompressor.csproj", "{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9477DE2C-DCDB-AB18-FFD0-CF277DC86577} = {9C6578E7-E4FE-79BB-1635-F363CC1E80DD}
+		{667D5633-2D73-959C-77E6-DC32A7056A85} = {9477DE2C-DCDB-AB18-FFD0-CF277DC86577}
+		{9F3B1DE0-C45C-7002-F79C-AFB33722761D} = {667D5633-2D73-959C-77E6-DC32A7056A85}
+		{5D2CA2F7-5733-A323-2E3E-9D08DB2C5F42} = {9F3B1DE0-C45C-7002-F79C-AFB33722761D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E62639EB-0F4F-476B-8C69-11496D16424C}
+	EndGlobalSection
+EndGlobal
