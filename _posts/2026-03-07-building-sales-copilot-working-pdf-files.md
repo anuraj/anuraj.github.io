@@ -6,7 +6,7 @@ date: 2026-03-10 00:00:00
 categories: [dotnet,AI]
 tags: [dotnet,AI]
 author: "Anuraj"
-image: /assets/images/2026/03/aspire_dashboard_log_ingest
+image: /assets/images/2026/03/aspire_dashboard_error_log2.png
 ---
 
 In this blog post, we will learn about creating a Sales Copilot - in this part we will learn about the issue with the existing PDF MCP Reader and how to implement different PDF reader to work with PDF files. In the existing project, since it is powered by Aspire, dotnet team introduced an MCP Server to read the PDF files. Unfortunately when working with large PDF files, we will get an issue like this - `System.Net.Http.HttpRequestException: Response status code does not indicate success: 413 (Content Too Large)`.

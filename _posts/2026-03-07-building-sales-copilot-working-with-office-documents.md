@@ -6,7 +6,7 @@ date: 2026-03-07 00:00:00
 categories: [dotnet,AI]
 tags: [dotnet,AI]
 author: "Anuraj"
-image: /assets/images/2026/03/aspire_dashboard_log_ingest
+image: /assets/images/2026/03/aspire_dashboard_log_ingest.png
 ---
 
 In this blog post, we will learn about creating a Sales Copilot - which helps Sales people to answer questions about various documents - In this part we will explore how to work with office documents - mainly word documents and powerpoint presentations.
