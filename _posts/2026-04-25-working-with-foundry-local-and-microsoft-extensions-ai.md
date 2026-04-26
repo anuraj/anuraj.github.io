@@ -6,7 +6,7 @@ date: 2026-04-25 00:00:00
 categories: [AI,Microsoft,Foundry,dotnet]
 tags: [AI,Microsoft,Foundry,dotnet]
 author: "Anuraj"
-image: /assets/images/2026/04/
+image: /assets/images/2026/04/foundry_cache_list.png
 ---
 
 In this blog post, we will explore how to work with Foundry local and Microsoft Extensions AI. In this post we will be implementing a conversational .NET console chat app using an OpenAI and foundry local. 
