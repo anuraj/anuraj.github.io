@@ -9,7 +9,7 @@ author: "Anuraj"
 image: /assets/images/2026/04/foundry_local_running.png
 ---
 
-In this blog post, we’ll explore **Microsoft Foundry Local** and how you can use it to run AI models directly on your machine.
+In this blog post, we'll explore **Microsoft Foundry Local** and how you can use it to run AI models directly on your machine.
 
 Imagine building AI-powered applications that run entirely on a user's device - no cloud dependency, no latency, and no data leaving the system. That's exactly what Foundry Local enables. It provides an easy-to-use SDK (C#, JavaScript, Rust, and Python), a curated catalog of optimized models, and automatic hardware acceleration - all packaged into a lightweight developer experience. The best part? Your app works offline, responses are instant, and there are no per-token costs or backend infrastructure to manage.
 
