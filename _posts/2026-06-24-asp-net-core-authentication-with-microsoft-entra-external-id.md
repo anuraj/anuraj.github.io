@@ -49,5 +49,30 @@ In the `appsettings.json` file we need to add the following configuration.
 
 And while configuring the app in Entra, we need to set the Application type as Web, and callback URL as `http://localhost:<PORT_NUMBER>/signin-oidc`. Also make sure the Access tokens and ID tokens check boxes checked.
 
+ For Sign In and Signout actions we can use the following action methods of `MicrosoftIdentity` like this.
+
+ ```html
+ @using System.Security.Principal
+
+<ul class="navbar-nav">
+@if (User.Identity is not null && User.Identity.IsAuthenticated)
+{
+        <li class="nav-item">
+            <span class="nav-link text-dark">Hello @User.Claims.First(c => c.Type == "preferred_username").Value</span>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>
+        </li>
+}
+else
+{
+        <li class="nav-item">
+            <a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignIn">Sign in</a>
+        </li>
+}
+</ul>
+ ```
+
+This way we can integrate ASP.NET Core application to Microsoft Entra External Id.
 
 Happy Programming
