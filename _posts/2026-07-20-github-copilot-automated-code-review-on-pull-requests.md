@@ -6,6 +6,7 @@ date: 2026-07-20 00:00:00
 categories: [dotnet,codereview,github,copilot]
 tags: [dotnet,codereview,github,copilot]
 author: "Anuraj"
+image: /assets/images/2026/07/github_action_main_expanded.png
 ---
 In this blog post, we will explore automated Code Review on Pull Requests using GitHub Copilot. First we need to install the Copilot CLI in the GitHub Action and then we can execute the copilot CLI with prompt parameter and view the results.
 
