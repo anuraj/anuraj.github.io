@@ -18,7 +18,7 @@ In this blog post, we will explore automated Code Review on Pull Requests using 
         set -e
         copilot --silent --yolo -p "Review the changes in this commit for bugs, security issues, and logic errors. Be specific about line numbers and provide detailed explanations for any issues found.
     env:
-        GITHUB_TOKEN: $\{{ secrets.GITHUB_TOKEN \}}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 We need the `copilot-requests: write` permissions - which we need to add it in the beginning of the GitHub Action. Here is the screenshot of the application.
