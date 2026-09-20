@@ -102,7 +102,7 @@ public async Task<CallToolResult> Visualize([Description("SQL query to get the q
 
 The `McpMeta` attribute tells the MCP Host - this tool has a UI, you can find it at this resource URI. This tool does not return HTML, it return normal data - we need to handle the response in the HTML. We need to make sure the resourceUri in the tool must exactly match the UriTemplate of the resource. Next we need to `UI` directory and html file inside the directory with `visualize.html`. In the html file, we need following Javascript code.
 
-```Javascript
+```javascript
 let nextRequestId = 1;
 const pendingRequests = new Map();
 
